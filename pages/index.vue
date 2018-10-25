@@ -2,7 +2,7 @@
     <v-content class="mt-5">
         <v-container>
             <v-layout justify-center>
-                <v-flex md3 class="text-xs-center">
+                <v-flex class="text-xs-center">
                     <v-avatar size="200px">
                         <img
                             class="img-circle elevation-7 mb-5"
@@ -10,7 +10,7 @@
                             >
                     </v-avatar>
                         <div class="headline">Christopher Gauffin</div>
-                        <div class="subheading text-xs-center grey--text pt-1 pb-3">Here are some links to my social and projects</div>
+                        <div class="subheading text-xs-center grey--text pt-1 pb-3">Here are some links to my social media and projects</div>
                         <v-layout justify-center>
                             <v-btn
                                 v-for="(social, i) in socials"
@@ -29,7 +29,7 @@
                 </v-flex>
             </v-layout>
             <v-layout justify-center row>
-                <v-flex md6>
+                <v-flex md8>
                     <v-card 
                         v-for="(site, i) in sites"
                         :key="i"
