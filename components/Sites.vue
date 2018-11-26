@@ -1,11 +1,11 @@
 <template>
 
     <v-layout justify-center row>
-        <v-flex md8>
+        <v-flex>
             <v-card 
                 v-for="(site, i) in sites"
                 :key="i"
-                class="mt-5">
+                class="mb-5">
                 <v-card-title primary-title>
                     <div>
                         <div class="headline">{{ site.title }}</div>

@@ -1,5 +1,5 @@
 <template>
-     <v-content class="mt-5">
+    <v-content class="mt-5">
         <v-container>
             <v-layout justify-center>
                 <v-flex class="text-xs-center">
@@ -19,41 +19,50 @@
                                 :href="social.link"
                                 :color="social.color"
                                 class="white--text"
-                                fab
                                 icon
-                                small
                                 >
                                 <v-icon>{{ social.icon }}</v-icon>
                             </v-btn>
                         </v-layout>
                 </v-flex>
             </v-layout>
-            <v-layout>
-                <v-toolbar>
+            <v-layout justify-center>
+                <v-flex 
+                  md8 
+                  class="mt-5"
+                >
                     <v-tabs 
-                    fixed-tabs
-                    v-model="tabs"
+                        style="display:none;"
+                        color="transparent"
+                        fixed-tabs
+                        v-model="tabs"
                     >
                         <v-tab 
-                        v-for="(item, i) in items"
-                        :key="i"
-                        :value="item.title"
-                        >
+                            v-for="(item, i) in items"
+                            :key="i"
+                            :value="item.title"
+                            >
                             {{item.title}}
                         </v-tab>
+                        <v-tabs-slider color="white"></v-tabs-slider>
                     </v-tabs>
-                </v-toolbar>
+                </v-flex>
+
             </v-layout>
-            <v-tabs-items 
-                v-model="tabs"
-            >
-                <v-tab-item
-                    v-for="(item, i) in items"
-                    :key="i"
-                >
-                    <component :is="item.component"></component>
-                </v-tab-item>
-            </v-tabs-items>
+            <v-layout justify-center>
+                <v-flex md6>
+                    <v-tabs-items 
+                        v-model="tabs"
+                        >
+                        <v-tab-item
+                            v-for="(item, i) in items"
+                            :key="i"
+                            >
+                            <component :is="item.component"></component>
+                        </v-tab-item>
+                    </v-tabs-items>
+                </v-flex>
+            </v-layout>
         </v-container>
     </v-content>
 </template>
@@ -68,6 +77,7 @@ export default {
         Skills
     },
     data: ()=> ({
+        tabs: null,
         items: [
             { title: "Sites", icon: "fa-globe", component: Sites },
             { title: "Skills", icon: "fa-globe", component: Skills },
