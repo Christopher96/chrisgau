@@ -1,0 +1,532 @@
+
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.004  000.004: --- VIM STARTING ---
+000.086  000.082: Allocated generic buffers
+000.153  000.067: locale set
+000.164  000.011: GUI prepared
+000.165  000.001: clipboard setup
+000.169  000.004: window checked
+001.211  001.042: inits 1
+001.290  000.079: parsing arguments
+001.292  000.002: expanding arguments
+001.301  000.009: shell init
+001.589  000.288: Termcap init
+001.683  000.094: inits 2
+001.840  000.157: init highlight
+002.266  000.322  000.322: sourcing /usr/share/vim/vimfiles/archlinux.vim
+002.291  000.421  000.099: sourcing /etc/vimrc
+002.633  000.237  000.237: sourcing /home/syphez/.vim/plugin/dragvisuals.vim
+003.174  000.498  000.498: sourcing /home/syphez/.vim/autoload/keybinds.vim
+004.491  000.878  000.878: sourcing /usr/share/vim/vim81/syntax/syncolor.vim
+004.606  001.049  000.171: sourcing /usr/share/vim/vim81/syntax/synload.vim
+011.403  000.028  000.028: sourcing /usr/share/vim/vimfiles/ftdetect/conkyrc.vim
+011.543  006.900  006.872: sourcing /usr/share/vim/vim81/filetype.vim
+011.580  008.093  000.144: sourcing /usr/share/vim/vim81/syntax/syntax.vim
+011.656  000.044  000.044: sourcing /usr/share/vim/vim81/filetype.vim
+011.727  000.038  000.038: sourcing /usr/share/vim/vim81/ftplugin.vim
+012.552  000.792  000.792: sourcing /usr/share/vim/vim81/ftoff.vim
+013.104  000.272  000.272: sourcing /home/syphez/.vim/bundle/Vundle.vim/autoload/vundle.vim
+013.350  000.171  000.171: sourcing /home/syphez/.vim/bundle/Vundle.vim/autoload/vundle/config.vim
+028.040  000.028  000.028: sourcing /home/syphez/.vim/bundle/vim-javascript-syntax/ftdetect/javascript.vim
+028.105  000.012  000.012: sourcing /home/syphez/.vim/bundle/scss-syntax.vim/ftdetect/scss.vim
+028.156  000.017  000.017: sourcing /home/syphez/.vim/bundle/typescript-vim/ftdetect/typescript.vim
+028.219  000.012  000.012: sourcing /home/syphez/.vim/bundle/vim-vue/ftdetect/vue.vim
+028.342  000.015  000.015: sourcing /usr/share/vim/vimfiles/ftdetect/conkyrc.vim
+028.701  009.551  009.467: sourcing /usr/share/vim/vim81/filetype.vim
+028.980  000.013  000.013: sourcing /usr/share/vim/vim81/ftplugin.vim
+029.281  000.036  000.036: sourcing /usr/share/vim/vim81/indent.vim
+162.126  159.809  140.064: sourcing $HOME/.vimrc
+162.138  000.068: sourcing vimrc file(s)
+162.378  000.042  000.042: sourcing /home/syphez/.vim/plugin/dragvisuals.vim
+162.429  000.041  000.041: sourcing /home/syphez/.vim/plugin/expander.vim
+162.604  000.165  000.165: sourcing /home/syphez/.vim/plugin/ranger.vim
+162.637  000.022  000.022: sourcing /home/syphez/.vim/plugin/vreplace.vim
+166.543  003.846  003.846: sourcing /home/syphez/.vim/bundle/tComment/plugin/tcomment.vim
+169.501  002.889  002.889: sourcing /home/syphez/.vim/bundle/emmet-vim/plugin/emmet.vim
+170.018  000.448  000.448: sourcing /home/syphez/.vim/bundle/auto-pairs/plugin/auto-pairs.vim
+170.747  000.173  000.173: sourcing /home/syphez/.vim/bundle/vCoolor.vim/autoload/vcoolor/convert.vim
+170.976  000.894  000.721: sourcing /home/syphez/.vim/bundle/vCoolor.vim/plugin/vCoolor.vim
+171.435  000.392  000.392: sourcing /home/syphez/.vim/bundle/vim-multiple-cursors/plugin/multiple_cursors.vim
+172.017  000.231  000.231: sourcing /home/syphez/.vim/bundle/ctrlp.vim/autoload/ctrlp/mrufiles.vim
+172.405  000.894  000.663: sourcing /home/syphez/.vim/bundle/ctrlp.vim/plugin/ctrlp.vim
+172.548  000.059  000.059: sourcing /home/syphez/.vim/bundle/vim-snippets/plugin/vimsnippets.vim
+173.080  000.470  000.470: sourcing /home/syphez/.vim/bundle/vim-angular/plugin/angular.vim
+173.389  000.021  000.021: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/autoloclist.vim
+173.409  000.010  000.010: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/balloons.vim
+173.429  000.011  000.011: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/checker.vim
+173.448  000.010  000.010: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/cursor.vim
+173.468  000.011  000.011: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/highlighting.vim
+173.552  000.013  000.013: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/loclist.vim
+173.574  000.012  000.012: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/modemap.vim
+173.595  000.012  000.012: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/notifiers.vim
+173.617  000.012  000.012: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/registry.vim
+173.639  000.012  000.012: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/signs.vim
+174.431  000.565  000.565: sourcing /home/syphez/.vim/bundle/syntastic/autoload/syntastic/util.vim
+186.605  000.088  000.088: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/autoloclist.vim
+186.687  000.069  000.069: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/balloons.vim
+186.926  000.229  000.229: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/checker.vim
+187.026  000.090  000.090: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/cursor.vim
+187.109  000.074  000.074: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/highlighting.vim
+187.380  000.262  000.262: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/loclist.vim
+187.469  000.078  000.078: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/modemap.vim
+187.543  000.063  000.063: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/notifiers.vim
+187.863  000.310  000.310: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/registry.vim
+187.963  000.089  000.089: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/signs.vim
+189.379  015.731  013.814: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic.vim
+189.565  000.092  000.092: sourcing /home/syphez/.vim/bundle/vim-jinja/plugin/htmljinja.vim
+189.991  000.087  000.087: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/init.vim
+190.605  000.102  000.102: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/parts.vim
+191.503  001.863  001.674: sourcing /home/syphez/.vim/bundle/vim-airline/plugin/airline.vim
+191.655  000.067  000.067: sourcing /home/syphez/.vim/bundle/vim-airline-themes/plugin/airline-themes.vim
+194.202  000.159  000.159: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline.vim
+194.303  002.582  002.423: sourcing /home/syphez/.vim/bundle/vim-devicons/plugin/webdevicons.vim
+195.107  000.732  000.732: sourcing /home/syphez/.vim/bundle/vim-surround/plugin/surround.vim
+195.533  000.352  000.352: sourcing /home/syphez/.vim/bundle/vim-closetag/plugin/closetag.vim
+195.747  000.150  000.150: sourcing /home/syphez/.vim/bundle/vim-autoread/plugin/autoread.vim
+394.443  198.646  198.646: sourcing /home/syphez/.vim/bundle/omnisharp-vim/plugin/OmniSharp.vim
+395.104  000.393  000.393: sourcing /usr/share/vim/vim81/plugin/getscriptPlugin.vim
+395.588  000.469  000.469: sourcing /usr/share/vim/vim81/plugin/gzip.vim
+396.005  000.398  000.398: sourcing /usr/share/vim/vim81/plugin/logiPat.vim
+396.109  000.089  000.089: sourcing /usr/share/vim/vim81/plugin/manpager.vim
+396.417  000.297  000.297: sourcing /usr/share/vim/vim81/plugin/matchparen.vim
+396.534  000.104  000.104: sourcing /usr/share/vim/vim81/plugin/netrwPlugin.vim
+396.640  000.095  000.095: sourcing /usr/share/vim/vim81/plugin/rrhelper.vim
+396.740  000.089  000.089: sourcing /usr/share/vim/vim81/plugin/spellfile.vim
+397.047  000.296  000.296: sourcing /usr/share/vim/vim81/plugin/tarPlugin.vim
+397.316  000.250  000.250: sourcing /usr/share/vim/vim81/plugin/tohtml.vim
+397.633  000.304  000.304: sourcing /usr/share/vim/vim81/plugin/vimballPlugin.vim
+397.966  000.306  000.306: sourcing /usr/share/vim/vim81/plugin/zipPlugin.vim
+398.005  002.276: loading plugins
+398.059  000.054: loading packages
+398.419  000.360: loading after plugins
+399.134  000.715: inits 3
+399.495  000.361: reading viminfo
+401.437  001.942: setup clipboard
+401.459  000.022: setting raw mode
+401.462  000.003: start termcap
+401.513  000.051: clearing screen
+404.716  000.963  000.963: sourcing /usr/share/vim/vim81/scripts.vim
+406.980  000.292  000.292: sourcing /usr/share/vim/vim81/ftplugin/text.vim
+408.855  000.294  000.294: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/extensions.vim
+409.105  000.060  000.060: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/extensions/quickfix.vim
+409.422  000.074  000.074: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/extensions/ctrlp.vim
+409.775  000.052  000.052: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/extensions/syntastic.vim
+410.120  000.139  000.139: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/extensions/whitespace.vim
+410.647  000.091  000.091: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/extensions/po.vim
+410.897  000.044  000.044: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/extensions/wordcount.vim
+411.219  000.152  000.152: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/extensions/tabline.vim
+411.475  000.058  000.058: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/autoshow.vim
+412.011  000.134  000.134: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/tabs.vim
+412.466  000.210  000.210: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/buffers.vim
+412.863  000.147  000.147: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/ctrlspace.vim
+415.685  000.093  000.093: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/section.vim
+416.115  000.198  000.198: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/highlighter.vim
+419.275  000.058  000.058: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/themes.vim
+420.739  001.691  001.633: sourcing /home/syphez/.vim/bundle/vim-airline-themes/autoload/airline/themes/zenburn.vim
+429.987  000.166  000.166: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/util.vim
+434.869  000.146  000.146: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/builder.vim
+435.527  000.097  000.097: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/extensions/default.vim
+451.477  000.197  000.197: sourcing /home/syphez/.vim/bundle/ctrlp.vim/autoload/ctrlp/utils.vim
+487.115  001.013  001.013: sourcing /home/syphez/.vim/bundle/syntastic/autoload/syntastic/log.vim
+487.533  079.709: opening buffers
+493.555  006.022: BufEnter autocommands
+493.561  000.006: editing files in windows
+494.353  000.792: VimEnter autocommands
+494.357  000.004: before starting main loop
+536.070  008.335  008.335: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/extensions/wordcount/formatters/default.vim
+544.629  001.124  001.124: sourcing /usr/share/vim/vim81/ftplugin/text.vim
+554.387  000.234  000.234: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/buflist.vim
+556.072  000.105  000.105: sourcing /home/syphez/.vim/bundle/vim-devicons/autoload/airline/extensions/tabline/formatters/webdevicons.vim
+557.347  000.434  000.434: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/formatters/default.vim
+607.819  104.230: first screen update
+607.824  000.005: --- VIM STARTED ---
+
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.004  000.004: --- VIM STARTING ---
+000.087  000.083: Allocated generic buffers
+000.143  000.056: locale set
+000.151  000.008: GUI prepared
+000.151  000.000: clipboard setup
+000.155  000.004: window checked
+000.536  000.381: inits 1
+000.597  000.061: parsing arguments
+000.599  000.002: expanding arguments
+000.606  000.007: shell init
+000.874  000.268: Termcap init
+000.918  000.044: inits 2
+001.053  000.135: init highlight
+001.346  000.230  000.230: sourcing /usr/share/vim/vimfiles/archlinux.vim
+001.364  000.291  000.061: sourcing /etc/vimrc
+001.670  000.220  000.220: sourcing /home/syphez/.vim/plugin/dragvisuals.vim
+002.199  000.489  000.489: sourcing /home/syphez/.vim/autoload/keybinds.vim
+003.462  000.862  000.862: sourcing /usr/share/vim/vim81/syntax/syncolor.vim
+003.574  001.024  000.162: sourcing /usr/share/vim/vim81/syntax/synload.vim
+010.283  000.028  000.028: sourcing /usr/share/vim/vimfiles/ftdetect/conkyrc.vim
+010.398  006.792  006.764: sourcing /usr/share/vim/vim81/filetype.vim
+010.436  007.935  000.119: sourcing /usr/share/vim/vim81/syntax/syntax.vim
+010.480  000.015  000.015: sourcing /usr/share/vim/vim81/filetype.vim
+010.544  000.036  000.036: sourcing /usr/share/vim/vim81/ftplugin.vim
+011.398  000.824  000.824: sourcing /usr/share/vim/vim81/ftoff.vim
+011.930  000.265  000.265: sourcing /home/syphez/.vim/bundle/Vundle.vim/autoload/vundle.vim
+012.179  000.162  000.162: sourcing /home/syphez/.vim/bundle/Vundle.vim/autoload/vundle/config.vim
+023.897  000.023  000.023: sourcing /home/syphez/.vim/bundle/vim-javascript-syntax/ftdetect/javascript.vim
+023.960  000.012  000.012: sourcing /home/syphez/.vim/bundle/scss-syntax.vim/ftdetect/scss.vim
+024.014  000.017  000.017: sourcing /home/syphez/.vim/bundle/typescript-vim/ftdetect/typescript.vim
+024.100  000.015  000.015: sourcing /home/syphez/.vim/bundle/vim-vue/ftdetect/vue.vim
+024.238  000.017  000.017: sourcing /usr/share/vim/vimfiles/ftdetect/conkyrc.vim
+024.572  006.487  006.403: sourcing /usr/share/vim/vim81/filetype.vim
+024.850  000.012  000.012: sourcing /usr/share/vim/vim81/ftplugin.vim
+025.155  000.031  000.031: sourcing /usr/share/vim/vim81/indent.vim
+132.949  131.562  115.086: sourcing $HOME/.vimrc
+132.958  000.052: sourcing vimrc file(s)
+133.134  000.033  000.033: sourcing /home/syphez/.vim/plugin/dragvisuals.vim
+133.175  000.033  000.033: sourcing /home/syphez/.vim/plugin/expander.vim
+133.321  000.138  000.138: sourcing /home/syphez/.vim/plugin/ranger.vim
+133.349  000.019  000.019: sourcing /home/syphez/.vim/plugin/vreplace.vim
+137.204  003.805  003.805: sourcing /home/syphez/.vim/bundle/tComment/plugin/tcomment.vim
+140.015  002.737  002.737: sourcing /home/syphez/.vim/bundle/emmet-vim/plugin/emmet.vim
+140.490  000.410  000.410: sourcing /home/syphez/.vim/bundle/auto-pairs/plugin/auto-pairs.vim
+141.167  000.170  000.170: sourcing /home/syphez/.vim/bundle/vCoolor.vim/autoload/vcoolor/convert.vim
+141.374  000.826  000.656: sourcing /home/syphez/.vim/bundle/vCoolor.vim/plugin/vCoolor.vim
+141.833  000.396  000.396: sourcing /home/syphez/.vim/bundle/vim-multiple-cursors/plugin/multiple_cursors.vim
+142.309  000.200  000.200: sourcing /home/syphez/.vim/bundle/ctrlp.vim/autoload/ctrlp/mrufiles.vim
+142.791  000.905  000.705: sourcing /home/syphez/.vim/bundle/ctrlp.vim/plugin/ctrlp.vim
+142.923  000.057  000.057: sourcing /home/syphez/.vim/bundle/vim-snippets/plugin/vimsnippets.vim
+143.448  000.468  000.468: sourcing /home/syphez/.vim/bundle/vim-angular/plugin/angular.vim
+143.762  000.026  000.026: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/autoloclist.vim
+143.783  000.010  000.010: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/balloons.vim
+143.804  000.012  000.012: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/checker.vim
+143.822  000.010  000.010: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/cursor.vim
+143.842  000.011  000.011: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/highlighting.vim
+143.911  000.011  000.011: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/loclist.vim
+143.931  000.011  000.011: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/modemap.vim
+143.950  000.011  000.011: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/notifiers.vim
+143.969  000.011  000.011: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/registry.vim
+143.988  000.011  000.011: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/signs.vim
+144.742  000.530  000.530: sourcing /home/syphez/.vim/bundle/syntastic/autoload/syntastic/util.vim
+157.829  000.153  000.153: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/autoloclist.vim
+158.002  000.148  000.148: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/balloons.vim
+158.515  000.493  000.493: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/checker.vim
+158.726  000.190  000.190: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/cursor.vim
+158.901  000.154  000.154: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/highlighting.vim
+159.466  000.544  000.544: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/loclist.vim
+159.655  000.165  000.165: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/modemap.vim
+159.824  000.141  000.141: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/notifiers.vim
+160.501  000.653  000.653: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/registry.vim
+160.713  000.188  000.188: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic/signs.vim
+163.224  019.228  015.869: sourcing /home/syphez/.vim/bundle/syntastic/plugin/syntastic.vim
+163.518  000.124  000.124: sourcing /home/syphez/.vim/bundle/vim-jinja/plugin/htmljinja.vim
+164.141  000.129  000.129: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/init.vim
+164.925  000.128  000.128: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/parts.vim
+166.096  002.463  002.206: sourcing /home/syphez/.vim/bundle/vim-airline/plugin/airline.vim
+166.242  000.050  000.050: sourcing /home/syphez/.vim/bundle/vim-airline-themes/plugin/airline-themes.vim
+169.756  000.205  000.205: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline.vim
+169.889  003.569  003.364: sourcing /home/syphez/.vim/bundle/vim-devicons/plugin/webdevicons.vim
+170.895  000.917  000.917: sourcing /home/syphez/.vim/bundle/vim-surround/plugin/surround.vim
+171.435  000.455  000.455: sourcing /home/syphez/.vim/bundle/vim-closetag/plugin/closetag.vim
+171.705  000.192  000.192: sourcing /home/syphez/.vim/bundle/vim-autoread/plugin/autoread.vim
+346.270  174.499  174.499: sourcing /home/syphez/.vim/bundle/omnisharp-vim/plugin/OmniSharp.vim
+346.684  000.138  000.138: sourcing /usr/share/vim/vim81/plugin/getscriptPlugin.vim
+347.133  000.436  000.436: sourcing /usr/share/vim/vim81/plugin/gzip.vim
+347.424  000.276  000.276: sourcing /usr/share/vim/vim81/plugin/logiPat.vim
+347.468  000.032  000.032: sourcing /usr/share/vim/vim81/plugin/manpager.vim
+347.705  000.227  000.227: sourcing /usr/share/vim/vim81/plugin/matchparen.vim
+347.743  000.027  000.027: sourcing /usr/share/vim/vim81/plugin/netrwPlugin.vim
+347.794  000.040  000.040: sourcing /usr/share/vim/vim81/plugin/rrhelper.vim
+347.839  000.035  000.035: sourcing /usr/share/vim/vim81/plugin/spellfile.vim
+348.065  000.216  000.216: sourcing /usr/share/vim/vim81/plugin/tarPlugin.vim
+348.197  000.117  000.117: sourcing /usr/share/vim/vim81/plugin/tohtml.vim
+348.441  000.233  000.233: sourcing /usr/share/vim/vim81/plugin/vimballPlugin.vim
+348.682  000.217  000.217: sourcing /usr/share/vim/vim81/plugin/zipPlugin.vim
+348.718  002.318: loading plugins
+348.769  000.051: loading packages
+349.111  000.342: loading after plugins
+349.913  000.802: inits 3
+351.298  001.385: reading viminfo
+353.859  002.561: setup clipboard
+353.883  000.024: setting raw mode
+353.887  000.004: start termcap
+353.938  000.051: clearing screen
+357.544  001.000  001.000: sourcing /usr/share/vim/vim81/scripts.vim
+362.959  001.724  001.724: sourcing /home/syphez/.vim/bundle/vim-javascript-syntax/syntax/javascript.vim
+364.628  000.101  000.101: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/javascript.vim
+364.924  000.136  000.136: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/es6-number.vim
+365.420  000.393  000.393: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/es6-string.vim
+365.995  000.476  000.476: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/es6-array.vim
+366.603  000.507  000.507: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/es6-object.vim
+367.042  000.324  000.324: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/es6-symbol.vim
+367.242  000.093  000.093: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/es6-function.vim
+368.198  000.856  000.856: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/es6-math.vim
+368.861  000.569  000.569: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/es6-date.vim
+369.006  000.048  000.048: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/es6-json.vim
+369.160  000.052  000.052: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/es6-reflect.vim
+369.334  000.082  000.082: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/es6-regexp.vim
+369.492  000.070  000.070: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/es6-map.vim
+369.642  000.060  000.060: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/es6-set.vim
+369.805  000.051  000.051: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/es6-proxy.vim
+369.971  000.069  000.069: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/es6-promise.vim
+370.225  000.052  000.052: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/ecma-402.vim
+370.355  000.034  000.034: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/node.vim
+370.884  000.438  000.438: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/web.vim
+371.236  000.253  000.253: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/web-window.vim
+371.481  000.135  000.135: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/web-navigator.vim
+371.631  000.056  000.056: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/web-location.vim
+371.789  000.055  000.055: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/web-history.vim
+371.932  000.050  000.050: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/web-console.vim
+372.104  000.082  000.082: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/web-xhr.vim
+372.400  000.202  000.202: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/web-blob.vim
+372.592  000.098  000.098: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/web-crypto.vim
+372.845  000.163  000.163: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/web-fetch.vim
+373.032  000.087  000.087: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/web-service-worker.vim
+373.197  000.070  000.070: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/web-broadcast.vim
+373.602  000.215  000.215: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/web-payment.vim
+373.804  000.081  000.081: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/web-encoding.vim
+373.957  000.047  000.047: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/web-network.vim
+374.339  000.286  000.286: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/dom-node.vim
+374.562  000.119  000.119: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/dom-elem.vim
+374.730  000.069  000.069: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/dom-form.vim
+374.994  000.171  000.171: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/dom-document.vim
+375.268  000.183  000.183: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/dom-event.vim
+375.443  000.082  000.082: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/dom-storage.vim
+375.813  000.286  000.286: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/css.vim
+376.843  000.937  000.937: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/event.vim
+378.765  015.690  007.552: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/javascript.vim
+379.185  000.247  000.247: sourcing /usr/share/vim/vim81/syntax/javascript.vim
+381.476  001.973  001.973: sourcing /home/syphez/.vim/bundle/vim-css-color/autoload/css_color.vim
+383.215  000.417  000.417: sourcing /home/syphez/.vim/bundle/vim-css-color/syntax/colornames/basic.vim
+385.414  002.832  002.415: sourcing /home/syphez/.vim/bundle/vim-css-color/syntax/colornames/extended.vim
+385.676  006.346  001.541: sourcing /home/syphez/.vim/bundle/vim-css-color/after/syntax/javascript.vim
+390.193  004.041  004.041: sourcing /usr/share/vim/vim81/syntax/vb.vim
+401.396  010.682  010.682: sourcing /usr/share/vim/vim81/syntax/css.vim
+403.763  000.216  000.216: sourcing /home/syphez/.vim/bundle/vim-css-color/syntax/colornames/basic.vim
+405.424  002.016  001.800: sourcing /home/syphez/.vim/bundle/vim-css-color/syntax/colornames/extended.vim
+405.704  004.122  002.106: sourcing /home/syphez/.vim/bundle/vim-css-color/after/syntax/css.vim
+408.465  049.907  007.055: sourcing /usr/share/vim/vim81/syntax/html.vim
+410.326  001.718  001.718: sourcing /home/syphez/.vim/bundle/vim-css-color/after/syntax/html.vim
+421.935  009.979  009.979: sourcing /usr/share/vim/vim81/syntax/css.vim
+424.186  000.205  000.205: sourcing /home/syphez/.vim/bundle/vim-css-color/syntax/colornames/basic.vim
+425.867  002.023  001.818: sourcing /home/syphez/.vim/bundle/vim-css-color/syntax/colornames/extended.vim
+426.083  003.970  001.947: sourcing /home/syphez/.vim/bundle/vim-css-color/after/syntax/css.vim
+429.364  001.224  001.224: sourcing /home/syphez/.vim/bundle/vim-css-color/syntax/colornames/basic.vim
+431.001  003.015  002.791: sourcing /home/syphez/.vim/bundle/vim-css-color/syntax/colornames/extended.vim
+431.245  005.009  002.994: sourcing /home/syphez/.vim/bundle/vim-css-color/after/syntax/css.vim
+436.125  024.660  005.702: sourcing /usr/share/vim/vim81/syntax/less.vim
+438.702  000.242  000.242: sourcing /home/syphez/.vim/bundle/vim-css-color/syntax/colornames/basic.vim
+440.443  002.138  001.896: sourcing /home/syphez/.vim/bundle/vim-css-color/syntax/colornames/extended.vim
+440.702  004.380  002.242: sourcing /home/syphez/.vim/bundle/vim-css-color/after/syntax/less.vim
+451.739  005.487  005.487: sourcing /home/syphez/.vim/bundle/vim-javascript-syntax/syntax/javascript.vim
+455.891  000.227  000.227: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/javascript.vim
+456.292  000.300  000.300: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/es6-number.vim
+456.745  000.355  000.355: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/es6-string.vim
+457.149  000.306  000.306: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/es6-array.vim
+457.647  000.394  000.394: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/es6-object.vim
+457.949  000.201  000.201: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/es6-symbol.vim
+458.279  000.107  000.107: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/es6-function.vim
+458.707  000.334  000.334: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/es6-math.vim
+459.291  000.475  000.475: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/es6-date.vim
+459.517  000.132  000.132: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/es6-json.vim
+459.784  000.168  000.168: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/es6-reflect.vim
+460.101  000.223  000.223: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/es6-regexp.vim
+460.353  000.148  000.148: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/es6-map.vim
+460.587  000.143  000.143: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/es6-set.vim
+460.764  000.076  000.076: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/es6-proxy.vim
+461.051  000.190  000.190: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/es6-promise.vim
+461.248  000.101  000.101: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/ecma-402.vim
+461.386  000.050  000.050: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/node.vim
+462.400  000.924  000.924: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/web.vim
+463.147  000.595  000.595: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/web-window.vim
+463.544  000.293  000.293: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/web-navigator.vim
+463.776  000.130  000.130: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/web-location.vim
+463.987  000.116  000.116: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/web-history.vim
+464.332  000.246  000.246: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/web-console.vim
+464.635  000.181  000.181: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/web-xhr.vim
+465.263  000.512  000.512: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/web-blob.vim
+465.578  000.217  000.217: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/web-crypto.vim
+466.042  000.351  000.351: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/web-fetch.vim
+466.345  000.197  000.197: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/web-service-worker.vim
+466.572  000.130  000.130: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/web-broadcast.vim
+467.065  000.364  000.364: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/web-payment.vim
+467.308  000.134  000.134: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/web-encoding.vim
+467.504  000.097  000.097: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/web-network.vim
+467.918  000.322  000.322: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/dom-node.vim
+468.259  000.241  000.241: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/dom-elem.vim
+468.463  000.113  000.113: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/dom-form.vim
+469.011  000.449  000.449: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/dom-document.vim
+469.467  000.362  000.362: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/dom-event.vim
+469.723  000.158  000.158: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/dom-storage.vim
+470.463  000.649  000.649: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/css.vim
+472.276  001.704  001.704: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/yajs/event.vim
+476.116  024.275  011.860: sourcing /home/syphez/.vim/bundle/yajs.vim/syntax/javascript.vim
+476.288  000.036  000.036: sourcing /usr/share/vim/vim81/syntax/javascript.vim
+479.175  000.265  000.265: sourcing /home/syphez/.vim/bundle/vim-css-color/syntax/colornames/basic.vim
+480.913  002.139  001.874: sourcing /home/syphez/.vim/bundle/vim-css-color/syntax/colornames/extended.vim
+481.155  004.707  002.568: sourcing /home/syphez/.vim/bundle/vim-css-color/after/syntax/javascript.vim
+483.721  002.042  002.042: sourcing /usr/share/vim/vim81/syntax/vb.vim
+495.194  011.109  011.109: sourcing /usr/share/vim/vim81/syntax/css.vim
+497.850  000.293  000.293: sourcing /home/syphez/.vim/bundle/vim-css-color/syntax/colornames/basic.vim
+499.641  002.259  001.966: sourcing /home/syphez/.vim/bundle/vim-css-color/syntax/colornames/extended.vim
+499.901  004.547  002.288: sourcing /home/syphez/.vim/bundle/vim-css-color/after/syntax/css.vim
+502.995  060.285  008.082: sourcing /usr/share/vim/vim81/syntax/html.vim
+505.116  001.952  001.952: sourcing /home/syphez/.vim/bundle/vim-css-color/after/syntax/html.vim
+516.918  009.984  009.984: sourcing /usr/share/vim/vim81/syntax/css.vim
+519.804  000.258  000.258: sourcing /home/syphez/.vim/bundle/vim-css-color/syntax/colornames/basic.vim
+521.570  002.181  001.923: sourcing /home/syphez/.vim/bundle/vim-css-color/syntax/colornames/extended.vim
+521.814  004.708  002.527: sourcing /home/syphez/.vim/bundle/vim-css-color/after/syntax/css.vim
+527.005  021.651  006.959: sourcing /usr/share/vim/vim81/syntax/sass.vim
+529.868  000.237  000.237: sourcing /home/syphez/.vim/bundle/vim-css-color/syntax/colornames/basic.vim
+531.620  002.126  001.889: sourcing /home/syphez/.vim/bundle/vim-css-color/syntax/colornames/extended.vim
+531.837  004.661  002.535: sourcing /home/syphez/.vim/bundle/vim-css-color/after/syntax/sass.vim
+540.036  008.008  008.008: sourcing /usr/share/vim/vim81/syntax/ruby.vim
+543.260  002.960  002.960: sourcing /home/syphez/.vim/bundle/vim-css-color/after/syntax/ruby.vim
+545.245  102.994  003.477: sourcing /usr/share/vim/vim81/syntax/haml.vim
+550.028  003.938  003.938: sourcing /home/syphez/.vim/bundle/typescript-vim/syntax/typescript.vim
+554.116  000.338  000.338: sourcing /home/syphez/.vim/bundle/vim-css-color/syntax/colornames/basic.vim
+556.695  003.058  002.720: sourcing /home/syphez/.vim/bundle/vim-css-color/syntax/colornames/extended.vim
+556.902  005.649  002.591: sourcing /home/syphez/.vim/bundle/vim-css-color/after/syntax/stylus.vim
+571.429  013.302  013.302: sourcing /usr/share/vim/vim81/syntax/css.vim
+574.832  000.473  000.473: sourcing /home/syphez/.vim/bundle/vim-css-color/syntax/colornames/basic.vim
+577.600  003.411  002.938: sourcing /home/syphez/.vim/bundle/vim-css-color/syntax/colornames/extended.vim
+577.860  006.218  002.807: sourcing /home/syphez/.vim/bundle/vim-css-color/after/syntax/css.vim
+583.225  025.270  005.750: sourcing /usr/share/vim/vim81/syntax/sass.vim
+586.166  000.336  000.336: sourcing /home/syphez/.vim/bundle/vim-css-color/syntax/colornames/basic.vim
+588.760  003.072  002.736: sourcing /home/syphez/.vim/bundle/vim-css-color/syntax/colornames/extended.vim
+588.987  005.567  002.495: sourcing /home/syphez/.vim/bundle/vim-css-color/after/syntax/sass.vim
+603.253  013.427  013.427: sourcing /usr/share/vim/vim81/syntax/css.vim
+606.593  000.514  000.514: sourcing /home/syphez/.vim/bundle/vim-css-color/syntax/colornames/basic.vim
+609.492  003.562  003.048: sourcing /home/syphez/.vim/bundle/vim-css-color/syntax/colornames/extended.vim
+609.820  006.363  002.801: sourcing /home/syphez/.vim/bundle/vim-css-color/after/syntax/css.vim
+611.258  000.103  000.103: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/compositing-1.vim
+611.357  000.065  000.065: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-align-3.vim
+611.421  000.044  000.044: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-animations-1.vim
+611.519  000.073  000.073: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-backgrounds-3.vim
+611.611  000.074  000.074: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-backgrounds-4.vim
+611.681  000.046  000.046: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-break-3.vim
+611.730  000.032  000.032: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-cascade-3.vim
+611.781  000.033  000.033: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-cascade-4.vim
+611.854  000.052  000.052: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-color-3.vim
+611.958  000.082  000.082: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-color-4.vim
+611.998  000.023  000.023: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-contain-1.vim
+612.064  000.050  000.050: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-content-3.vim
+614.180  002.094  002.094: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-counter-styles-3.vim
+615.000  001.791  001.791: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-device-adapt-1.vim
+616.055  000.029  000.029: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-display-3.vim
+616.121  000.049  000.049: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-flexbox-1.vim
+616.164  000.018  000.018: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-font-loading-3.vim
+616.365  000.178  000.178: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-fonts-3.vim
+618.378  001.985  001.985: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-fonts-4.vim
+618.469  000.066  000.066: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-gcpm-3.vim
+618.590  000.101  000.101: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-grid-1.vim
+618.632  000.017  000.017: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-grid-2.vim
+618.742  000.038  000.038: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-images-4.vim
+618.815  000.056  000.056: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-inline-3.vim
+618.900  000.061  000.061: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-line-grid-1.vim
+618.986  000.065  000.065: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-lists-3.vim
+619.088  000.067  000.067: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-logical-1.vim
+619.188  000.082  000.082: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-masking-1.vim
+619.268  000.050  000.050: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-multicol-1.vim
+619.319  000.022  000.022: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-overflow-3.vim
+619.397  000.055  000.055: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-overflow-4.vim
+619.472  000.056  000.056: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-page-floats-3.vim
+619.526  000.028  000.028: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-paint-api-1.vim
+619.573  000.028  000.028: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-position-3.vim
+619.605  000.010  000.010: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-properties-values-api-1.vim
+619.657  000.035  000.035: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-pseudo-4.vim
+619.733  000.054  000.054: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-regions-1.vim
+619.794  000.039  000.039: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-rhythm-1.vim
+619.885  000.073  000.073: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-round-display-1.vim
+619.942  000.040  000.040: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-ruby-1.vim
+620.030  000.071  000.071: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-scoping-1.vim
+620.096  000.044  000.044: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-scroll-snap-1.vim
+620.183  000.058  000.058: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-shapes-1.vim
+620.226  000.020  000.020: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-sizing-3.vim
+620.252  000.010  000.010: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-style-attr.vim
+620.279  000.009  000.009: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-syntax-3.vim
+620.302  000.008  000.008: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-tables-3.vim
+620.397  000.076  000.076: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-text-3.vim
+620.558  000.142  000.142: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-text-4.vim
+620.638  000.052  000.052: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-text-decor-3.vim
+620.727  000.028  000.028: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-timing-1.vim
+620.816  000.069  000.069: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-transforms-1.vim
+620.905  000.071  000.071: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-transitions-1.vim
+620.941  000.011  000.011: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-typed-om-1.vim
+620.982  000.025  000.025: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-ui-3.vim
+621.036  000.038  000.038: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-ui-4.vim
+621.106  000.049  000.049: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-values-3.vim
+621.162  000.036  000.036: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-variables-1.vim
+621.239  000.031  000.031: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-will-change-1.vim
+621.328  000.068  000.068: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-writing-modes-3.vim
+621.373  000.020  000.020: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css-writing-modes-4.vim
+621.451  000.061  000.061: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css3-box.vim
+623.287  001.814  001.814: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css3-conditional.vim
+623.342  000.033  000.033: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css3-exclusions.vim
+623.518  000.159  000.159: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css3-images.vim
+623.593  000.014  000.014: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css3-namespace.vim
+623.662  000.050  000.050: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css3-page.vim
+623.760  000.080  000.080: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/css3-speech.vim
+623.806  000.014  000.014: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/cssom-1.vim
+623.853  000.029  000.029: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/cssom-view-1.vim
+623.940  000.065  000.065: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/fill-stroke-3.vim
+624.044  000.075  000.075: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/filter-effects-1.vim
+624.091  000.024  000.024: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/geometry-1.vim
+624.138  000.025  000.025: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/html5.vim
+624.202  000.041  000.041: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/motion-1.vim
+624.257  000.036  000.036: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/pointerevents.vim
+624.377  000.098  000.098: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/selectors-3.vim
+624.511  000.110  000.110: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/selectors-4.vim
+624.568  000.028  000.028: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/selectors-nonelement-1.vim
+624.830  000.244  000.244: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/svg2.vim
+624.886  000.024  000.024: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/web-animations-1.vim
+624.943  000.036  000.036: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/webvtt1.vim
+624.970  000.010  000.010: sourcing /home/syphez/.vim/bundle/vim-css3-syntax/after/syntax/css/worklets-1.vim
+652.189  062.572  030.912: sourcing /home/syphez/.vim/bundle/scss-syntax.vim/syntax/scss.vim
+653.586  001.258  001.258: sourcing /usr/share/vim/vim81/syntax/scss.vim
+657.136  000.457  000.457: sourcing /home/syphez/.vim/bundle/vim-css-color/syntax/colornames/basic.vim
+660.307  003.777  003.320: sourcing /home/syphez/.vim/bundle/vim-css-color/syntax/colornames/extended.vim
+660.525  006.754  002.977: sourcing /home/syphez/.vim/bundle/vim-css-color/after/syntax/scss.vim
+660.926  302.622  007.955: sourcing /home/syphez/.vim/bundle/vim-vue/syntax/vue.vim
+664.581  001.818  001.818: sourcing /usr/share/vim/vim81/autoload/htmlcomplete.vim
+664.783  002.537  000.719: sourcing /usr/share/vim/vim81/ftplugin/html.vim
+665.015  002.974  000.437: sourcing /home/syphez/.vim/bundle/vim-vue/ftplugin/vue.vim
+667.665  000.378  000.378: sourcing /usr/share/vim/vim81/indent/css.vim
+669.132  000.586  000.586: sourcing /usr/share/vim/vim81/indent/javascript.vim
+671.503  002.061  002.061: sourcing /usr/share/vim/vim81/indent/html.vim
+671.702  005.471  002.446: sourcing /home/syphez/.vim/bundle/vim-vue/indent/vue.vim
+672.571  000.332  000.332: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/extensions.vim
+672.854  000.067  000.067: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/extensions/quickfix.vim
+673.256  000.090  000.090: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/extensions/ctrlp.vim
+673.749  000.170  000.170: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/extensions/syntastic.vim
+674.147  000.145  000.145: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/extensions/whitespace.vim
+674.714  000.108  000.108: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/extensions/po.vim
+674.974  000.055  000.055: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/extensions/wordcount.vim
+675.421  000.243  000.243: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/extensions/tabline.vim
+675.753  000.096  000.096: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/autoshow.vim
+676.260  000.139  000.139: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/tabs.vim
+676.729  000.234  000.234: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/buffers.vim
+677.157  000.159  000.159: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/ctrlspace.vim
+680.229  000.122  000.122: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/section.vim
+680.695  000.210  000.210: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/highlighter.vim
+683.997  000.062  000.062: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/themes.vim
+686.606  002.875  002.813: sourcing /home/syphez/.vim/bundle/vim-airline-themes/autoload/airline/themes/zenburn.vim
+700.036  000.172  000.172: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/util.vim
+707.301  000.198  000.198: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/builder.vim
+707.949  000.112  000.112: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/extensions/default.vim
+725.442  000.222  000.222: sourcing /home/syphez/.vim/bundle/ctrlp.vim/autoload/ctrlp/utils.vim
+744.081  000.585  000.585: sourcing /home/syphez/.vim/bundle/syntastic/autoload/syntastic/log.vim
+744.319  071.980: opening buffers
+748.418  004.099: BufEnter autocommands
+748.422  000.004: editing files in windows
+748.912  000.490: VimEnter autocommands
+748.914  000.002: before starting main loop
+753.705  000.098  000.098: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/buflist.vim
+754.167  000.034  000.034: sourcing /home/syphez/.vim/bundle/vim-devicons/autoload/airline/extensions/tabline/formatters/webdevicons.vim
+754.518  000.089  000.089: sourcing /home/syphez/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/formatters/default.vim
+931.360  182.225: first screen update
+931.364  000.004: --- VIM STARTED ---

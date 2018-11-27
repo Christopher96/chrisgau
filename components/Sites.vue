@@ -1,5 +1,4 @@
 <template>
-
     <v-layout justify-center row>
         <v-flex>
             <v-card 
@@ -7,15 +6,15 @@
                 :key="i"
                 class="mb-5">
                 <v-card-title primary-title>
-                    <div>
-                        <div class="headline">{{ site.title }}</div>
-                        <span class="subheading grey--text">{{ site.description }}</span>
-                        <p v-if="site.user" class="mt-4">
-                            <u>Credentials</u><br/>
-                            Username: <span class="subheading"><i>{{ site.user.username }}</i></span><br/>
-                            Password: <span class="subheading"><i>{{ site.user.password }}</i></span>
-                        </p>
-                    </div>
+                        <div>
+                            <div class="headline">{{ site.title }}</div>
+                            <span class="subheading grey--text">{{ site.description }}</span>
+                            <p v-if="site.user" class="mt-4">
+                                <u>Credentials</u><br/>
+                                Username: <span class="subheading"><i>{{ site.user.username }}</i></span><br/>
+                                Password: <span class="subheading"><i>{{ site.user.password }}</i></span>
+                            </p>
+                        </div>
                 </v-card-title>
                 <v-card-actions>
                     <v-btn 

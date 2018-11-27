@@ -32,7 +32,6 @@
                   class="mt-5"
                 >
                     <v-tabs 
-                        style="display:none;"
                         color="transparent"
                         fixed-tabs
                         v-model="tabs"
