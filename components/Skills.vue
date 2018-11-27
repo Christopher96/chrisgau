@@ -16,7 +16,7 @@
                     <span class="subheading">{{stat.title}}</span>
                     <v-progress-linear 
                         v-in-viewport
-                        color="white"
+                        :color="skill.color"
                         height="10"
                         v-model="stat.progress"
                     >
@@ -32,6 +32,18 @@
                         <i class="subheading">{{skill.high}}</i>
                     </p>
                 </div>
+            </v-card>
+            <v-card class="pa-5 mb-5">
+                <p class="skill headline">Other</p>
+                <p class="subheading">These are some other buzzword technologies I am familiar with.</p>
+                <v-chip
+                    color="blue"
+                    text-color="white"
+                    class="subheading"
+                    v-for="(name, i) in other"
+                    :key="i">
+                    {{name}}
+                </v-chip>
             </v-card>
         </v-flex>
     </v-layout>
@@ -52,9 +64,9 @@
 
 export default {
     data: ()=> ({
-        intervals: [], 
         skills: { 
             personality: {
+                color: "blue",
                 low: "No thanks",
                 high: "Lovin it",
                 stats: [
@@ -85,6 +97,7 @@ export default {
                 ]
             },
             "Programming languages": {
+                color: "deep-purple",
                 low: "Noob",
                 high: "Senpai",
                 stats: [
@@ -123,18 +136,11 @@ export default {
                     { 
                         title: "C",
                         progress: 60
-                    },
-                    { 
-                        title: "BASH",
-                        progress: 60
-                    },
-                    { 
-                        title: "C++",
-                        progress: 40
-                    }
+                    }                
                 ]
             },
             frameworks: {
+                color: "yellow",
                 low: "U wot m8?",
                 high: "Master",
                 stats: [
@@ -169,8 +175,9 @@ export default {
                 ],
             },
             databases: {
+                color: "green",
                 low: "Floppydrives?",
-                high: "NSA, call me",
+                high: "",
                 stats: [
                     {
                         title: "MySQL",
@@ -183,10 +190,10 @@ export default {
                     {
                         title: "Microsoft SQL",
                         progress: 60
-                    }
-                ]
+                    }                ]
             },
             tools: {
+                color: "teal",
                 low: "Scrub",
                 high: "Pro",
                 stats: [
@@ -217,6 +224,7 @@ export default {
                 ]
             },
             "Operating systems": {
+                color: "red",
                 low: "Scriptkiddie",
                 high: "Hacker",
                 stats: [
@@ -236,7 +244,7 @@ export default {
             }
         },
         "other": [
-            "Git", "Arch", "Kali", "Ubuntu", "Gulp", "Webpack", "NPM/Yarn", "Raspberry PI", "Arduino", "Pentesting", "System administration", "Apache", "Adobe Flash", "Nuxt", "Vagrant"
+            "Git", "Arch", "Kali", "Ubuntu", "Gulp", "Webpack", "NPM", "Yarn", "Raspberry PI", "Arduino", "Pentesting", "System administration", "Apache", "Adobe Flash", "Nuxt", "Vagrant", "Amazon Web Services"
         ]
     })
 }
