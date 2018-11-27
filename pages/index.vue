@@ -28,7 +28,6 @@
             </v-layout>
             <v-layout justify-center>
                 <v-flex 
-                  md8 
                   class="mt-5"
                 >
                     <v-tabs 
@@ -49,7 +48,7 @@
 
             </v-layout>
             <v-layout justify-center>
-                <v-flex md6>
+                <v-flex md8>
                     <v-tabs-items 
                         v-model="tabs"
                         >

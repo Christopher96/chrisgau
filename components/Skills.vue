@@ -36,14 +36,17 @@
             <v-card class="pa-5 mb-5">
                 <p class="skill headline">Other</p>
                 <p class="subheading">These are some other buzzword technologies I am familiar with.</p>
-                <v-chip
-                    color="blue"
-                    text-color="white"
-                    class="subheading"
-                    v-for="(name, i) in other"
-                    :key="i">
-                    {{name}}
-                </v-chip>
+                <v-divider></v-divider>
+                <div class="mt-2">
+                    <v-chip
+                        color="blue"
+                        text-color="white"
+                        class="subheading"
+                        v-for="(name, i) in other"
+                        :key="i">
+                        {{name}}
+                    </v-chip>
+                </div>
             </v-card>
         </v-flex>
     </v-layout>
@@ -177,7 +180,7 @@ export default {
             databases: {
                 color: "green",
                 low: "Floppydrives?",
-                high: "",
+                high: "Dataguru",
                 stats: [
                     {
                         title: "MySQL",
