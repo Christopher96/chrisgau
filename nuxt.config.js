@@ -37,7 +37,7 @@ module.exports = {
      */
     plugins: [
         '@/plugins/vuetify',
-        '@/plugins/viewport'
+        '@/plugins/directives'
     ],
 
     /*

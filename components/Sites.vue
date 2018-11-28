@@ -65,7 +65,7 @@ export default {
             {
                 title: 'MM - Marina Mäkelä',
                 description: 'This site is designed with the help of Bootstrap and uses Wordpress PHP in the background. It is is a personal website for contact and where you can upload posts and images, it is also supports 3 languages, slideshows and is fully responsive',
-                link: 'http://syphez.esy.es/mm/sv/hem/',
+                link: 'http://studenter.miun.se/~chga1600/dt068g/',
             },
             {
                 title: 'Bitfire',

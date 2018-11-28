@@ -1,7 +1,7 @@
 <template>
     <v-content class="mt-5">
-        <v-container>
-            <v-layout justify-center>
+        <v-container @scroll="sticky">
+            <v-layout>
                 <v-flex class="text-xs-center">
                     <v-avatar size="200px">
                         <img
@@ -26,7 +26,7 @@
                         </v-layout>
                 </v-flex>
             </v-layout>
-            <v-layout justify-center>
+            <v-layout>
                 <v-flex 
                   class="mt-5"
                 >
@@ -48,7 +48,35 @@
 
             </v-layout>
             <v-layout justify-center>
-                <v-flex md8>
+                <!-- <v-flex md2>  -->
+                <!--     <v-card -->
+                <!--         class="nav"> -->
+                <!--           <v-navigation-drawer -->
+                <!--             floating -->
+                <!--             permanent -->
+                <!--             stateless -->
+                <!--             value="true" -->
+                <!--           > -->
+                <!--             <v-list dense> -->
+                <!--               <v-list-tile -->
+                <!--                 v-for="item in menu" -->
+                <!--                 :key="item.title" -->
+                <!--               > -->
+                <!--                 <v-list-tile-action> -->
+                <!--                   <v-icon></v-icon> -->
+                <!--                 </v-list-tile-action> -->
+                <!--  -->
+                <!--                 <v-list-tile-content> -->
+                <!--                   <v-list-tile-title>{{ item.title }}</v-list-tile-title> -->
+                <!--                 </v-list-tile-content> -->
+                <!--               </v-list-tile> -->
+                <!--             </v-list> -->
+                <!--           </v-navigation-drawer> -->
+                <!--     </v-card> -->
+                <!-- </v-flex> -->
+                <v-flex
+                    md8
+                    class="pl-5 pr-5">
                     <v-tabs-items 
                         v-model="tabs"
                         >
@@ -65,17 +93,32 @@
     </v-content>
 </template>
 
+<style>
+.nav {
+    position: fixed;
+}
+</style>
+
 <script>
 import Sites from '@/components/Sites'
 import Skills from '@/components/Skills'
 
 export default {
+    methods: {
+        sticky(e) {
+            console.log(e)
+        }
+    },
     components: {
         Sites,
         Skills
     },
     data: ()=> ({
         tabs: null,
+        menu: [
+          { title: 'Home', icon: 'dashboard' },
+          { title: 'About', icon: 'question_answer' }
+        ],
         items: [
             { title: "Sites", icon: "fa-globe", component: Sites },
             { title: "Skills", icon: "fa-globe", component: Skills },
