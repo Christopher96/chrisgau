@@ -1,6 +1,6 @@
 <template>
     <v-content class="mt-5">
-        <v-container @scroll="sticky">
+        <v-container>
             <v-layout>
                 <v-flex class="text-xs-center">
                     <v-avatar size="200px">
@@ -26,66 +26,40 @@
                         </v-layout>
                 </v-flex>
             </v-layout>
-            <v-layout>
-                <v-flex 
-                  class="mt-5"
-                >
-                    <v-tabs 
+            <v-layout class="mt-5">
+                <v-flex md2> 
+                    <v-card
                         color="transparent"
-                        fixed-tabs
-                        v-model="tabs"
-                    >
-                        <v-tab 
-                            v-for="(item, i) in items"
-                            :key="i"
-                            :value="item.title"
-                            >
-                            {{item.title}}
-                        </v-tab>
-                        <v-tabs-slider color="white"></v-tabs-slider>
-                    </v-tabs>
-                </v-flex>
+                        class="nav"
+                        :class="{ 'sticky': sticky }">
+                          <v-navigation-drawer>
+                            <v-list dense>
+                              <v-list-tile
+                                @click="changePage(item)"
+                                v-for="(item, i) in items"
+                                :key="i"
+                              >
+                                <v-list-tile-action>
+                                    <v-icon>{{ item.icon }}</v-icon>
+                                </v-list-tile-action>
 
-            </v-layout>
-            <v-layout justify-center>
-                <!-- <v-flex md2>  -->
-                <!--     <v-card -->
-                <!--         class="nav"> -->
-                <!--           <v-navigation-drawer -->
-                <!--             floating -->
-                <!--             permanent -->
-                <!--             stateless -->
-                <!--             value="true" -->
-                <!--           > -->
-                <!--             <v-list dense> -->
-                <!--               <v-list-tile -->
-                <!--                 v-for="item in menu" -->
-                <!--                 :key="item.title" -->
-                <!--               > -->
-                <!--                 <v-list-tile-action> -->
-                <!--                   <v-icon></v-icon> -->
-                <!--                 </v-list-tile-action> -->
-                <!--  -->
-                <!--                 <v-list-tile-content> -->
-                <!--                   <v-list-tile-title>{{ item.title }}</v-list-tile-title> -->
-                <!--                 </v-list-tile-content> -->
-                <!--               </v-list-tile> -->
-                <!--             </v-list> -->
-                <!--           </v-navigation-drawer> -->
-                <!--     </v-card> -->
-                <!-- </v-flex> -->
+                                <v-list-tile-content>
+                                  <v-list-tile-title 
+                                      class="subheading"
+                                      :class="{ 'grey--text': item != page }">{{ item.title }}</v-list-tile-title>
+                                </v-list-tile-content>
+                              </v-list-tile>
+                            </v-list>
+                          </v-navigation-drawer>
+                    </v-card>
+                </v-flex>
                 <v-flex
-                    md10>
-                    <v-tabs-items 
-                        v-model="tabs"
-                        >
-                        <v-tab-item
-                            v-for="(item, i) in items"
-                            :key="i"
-                            >
-                            <component :is="item.component"></component>
-                        </v-tab-item>
-                    </v-tabs-items>
+                    md8
+                    v-scroll="stickyCheck"
+                    class="pl-5 pr-5">
+                        <transition name="page-change">
+                            <component v-if="page" :is="page.component"></component>
+                        </transition>
                 </v-flex>
             </v-layout>
         </v-container>
@@ -94,7 +68,18 @@
 
 <style>
 .nav {
+    width: 250px;
+    margin-left: 40px;
+}
+.sticky {
     position: fixed;
+    top: 20px;
+}
+.page-change-enter {
+    opacity: 0;
+}
+.page-change-enter-active {
+    transition: all .5s ease;
 }
 </style>
 
@@ -103,9 +88,21 @@ import Sites from '@/components/Sites'
 import Skills from '@/components/Skills'
 
 export default {
+    mounted() {
+        this.page = this.items[0]
+    },
     methods: {
-        sticky(e) {
-            console.log(e)
+        stickyCheck(e, el) {
+            if(e.pageY > el.offsetTop + 50) {
+                this.sticky = true
+            } else {
+                this.sticky = false
+            }
+            this.topOffset = el.offsetTop
+        },
+        changePage(page) {
+            this.page = page
+            window.scrollTo(0, this.topOffset)
         }
     },
     components: {
@@ -113,14 +110,13 @@ export default {
         Skills
     },
     data: ()=> ({
+        topOffset: 0,
+        sticky: false,
         tabs: null,
-        menu: [
-          { title: 'Home', icon: 'dashboard' },
-          { title: 'About', icon: 'question_answer' }
-        ],
+        page: null,
         items: [
             { title: "Sites", icon: "fa-globe", component: Sites },
-            { title: "Skills", icon: "fa-globe", component: Skills },
+            { title: "Skills", icon: "fa-user", component: Skills },
         ],
         socials: [
             {

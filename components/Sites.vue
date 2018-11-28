@@ -4,7 +4,7 @@
             <v-card 
                 v-for="(site, i) in sites"
                 :key="i"
-                class="mb-5">
+                class="pa-4 mb-5">
                 <v-card-title primary-title>
                         <div>
                             <div class="headline">{{ site.title }}</div>
