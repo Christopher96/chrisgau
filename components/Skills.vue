@@ -156,6 +156,10 @@ export default {
                         progress: 100
                     },
                     {
+                        title: "Wordpress",
+                        progress: 90
+                    },
+                    {
                         title: "Vue JS/Vuetify",
                         progress: 70
                     },
