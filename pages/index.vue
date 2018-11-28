@@ -54,7 +54,7 @@
                     </v-card>
                 </v-flex>
                 <v-flex
-                    md8
+                    md10
                     v-scroll="stickyCheck"
                     class="pl-5 pr-5">
                         <transition name="page-change">
