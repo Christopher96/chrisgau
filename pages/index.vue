@@ -75,8 +75,7 @@
                 <!--     </v-card> -->
                 <!-- </v-flex> -->
                 <v-flex
-                    md8
-                    class="pl-5 pr-5">
+                    md10>
                     <v-tabs-items 
                         v-model="tabs"
                         >
