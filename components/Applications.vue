@@ -18,11 +18,17 @@
                 </v-card-title>
                 <v-card-actions>
                     <v-btn 
-                                flat 
-                                target="_blank"
-                                color="purple"
-                                :href="site.link"
-                                >Check it out</v-btn>
+                        flat 
+                        target="_blank"
+                        color="purple"
+                        :href="site.link"
+                        >Check it out</v-btn>
+                    <v-btn 
+                        flat 
+                        target="_blank"
+                        color="purple"
+                        :href="site.repo"
+                        >Repository</v-btn>
                     <v-spacer></v-spacer>
                 </v-card-actions>
             </v-card>
@@ -36,9 +42,11 @@ export default {
     data: ()=> ({
         sites: [
             {
+                id: 'addswift',
                 title: 'Addswift',
                 description: 'This is a prototype of an application for gathering social media in one place. The most interesting parts mostly lie in the backend where express (nodejs) is used as a RESTful API together with MongoDB for data storage. Frontend is build on Vue.js with the beautiful framework Vuetify. Users can log in with facebook or register manually. The authentication of social media is done through Oauth 2.0 and the application uses JWT (JSON Web Tokens) to sign in users.',
                 link: 'https://addswift.herokuapp.com/login',
+                repo: 'https://github.com/Christopher96/addswift',
                 user: {
                     username: "admin",
                     password: "admin"

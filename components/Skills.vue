@@ -148,7 +148,7 @@ export default {
                 high: "Master",
                 stats: [
                     {
-                        title: "jQuery (yeah I know...)",
+                        title: "jQuery",
                         progress: 100
                     },
                     {
@@ -237,7 +237,7 @@ export default {
                 stats: [
                     {
                         title: "Linux",
-                        progress: 80
+                        progress: 90
                     },
                     {
                         title: "MacOS",
@@ -251,7 +251,7 @@ export default {
             }
         },
         "other": [
-            "Git", "Arch", "Kali", "Ubuntu", "Gulp", "Webpack", "NPM", "Yarn", "Raspberry PI", "Arduino", "Pentesting", "System administration", "Apache", "Adobe Flash", "Nuxt", "Vagrant", "Amazon Web Services"
+            "Git", "Arch", "Kali", "Ubuntu", "Gulp", "Webpack", "NPM", "Yarn", "Raspberry PI", "Arduino", "Pentesting", "Sysadmin", "Apache", "Adobe Flash", "Nuxt", "Vagrant", "AWS", "Redux"
         ]
     })
 }

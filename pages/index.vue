@@ -27,7 +27,7 @@
                 </v-flex>
             </v-layout>
             <v-layout class="mt-5">
-                <v-flex md2> 
+                <v-flex md2 offset-md1> 
                     <v-card
                         color="transparent"
                         class="nav"
@@ -54,7 +54,7 @@
                     </v-card>
                 </v-flex>
                 <v-flex
-                    md10
+                    md6
                     v-scroll="stickyCheck"
                     class="pl-5 pr-5">
                         <transition name="page-change">
@@ -84,7 +84,9 @@
 </style>
 
 <script>
-import Sites from '@/components/Sites'
+import Applications from '@/components/Applications'
+import Games from '@/components/Games'
+import Experience from '@/components/Experience'
 import Skills from '@/components/Skills'
 
 export default {
@@ -106,8 +108,10 @@ export default {
         }
     },
     components: {
-        Sites,
-        Skills
+        Applications,
+        Games,
+        Skills,
+        Experience
     },
     data: ()=> ({
         topOffset: 0,
@@ -115,7 +119,9 @@ export default {
         tabs: null,
         page: null,
         items: [
-            { title: "Sites", icon: "fa-globe", component: Sites },
+            { title: "Applications", icon: "fa-globe", component: Applications },
+            { title: "Games", icon: "fa-gamepad", component: Games },
+            { title: "Experience", icon: "fa-user", component: Experience },
             { title: "Skills", icon: "fa-user", component: Skills },
         ],
         socials: [
@@ -133,6 +139,11 @@ export default {
                 icon: 'fa-github',
                 color: 'grey darken-3',
                 link: 'https://github.com/christopher96'
+            },
+            {
+                icon: 'fa-gitlab',
+                color: 'orange darken-4',
+                link: 'https://gitlab.com/Christopher96'
             }
         ]
     })
