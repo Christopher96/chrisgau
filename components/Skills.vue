@@ -25,11 +25,11 @@
                 <v-divider></v-divider>
                 <div class="d-flex">
                     <p class="text-md-left">
-                        <i class="subheading">{{skill.low}}</i>
+                        <i class="subheading">Beginner</i>
                     </p>
                     <v-spacer></v-spacer>
                     <p class="text-md-right">
-                        <i class="subheading">{{skill.high}}</i>
+                        <i class="subheading">Expert</i>
                     </p>
                 </div>
             </v-card>
