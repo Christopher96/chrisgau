@@ -8,25 +8,29 @@
                     color="grey darken-2"
                     >
                     <span class="headline" slot="opposite"></span>
-                    <v-card class="elevation-2">
+                    <v-card 
+                        class="elevation-2"
+                        >
                         <div class="grey darken-2 banner subheading">
                             {{exp.start}}<span v-if="exp.end"> - {{exp.end}}</span>
                         </div>
-                        <div class="pa-3 logo">
+                        <div class="pa-4 logo">
                             <v-card-media 
                               :src="'experience/'+exp.logo"
                               max-height="100"
                               contain></v-card-media>
                         </div>
-                        <v-card-title>
-                            <span class="headline">{{exp.title}}</span><br/>
-                        </v-card-title>
-                        <v-card-title>
-                            <i class="subheading">{{exp.subtitle}}</i>
-                        </v-card-title>
-                        <v-card-text>
-                            <span>{{exp.description}}</span>
-                        </v-card-text>
+                        <div class="pa-4">
+                            <v-card-title>
+                                <span class="headline">{{exp.title}}</span><br/>
+                            </v-card-title>
+                            <v-card-title>
+                                <i class="subheading">{{exp.subtitle}}</i>
+                            </v-card-title>
+                            <v-card-text>
+                                <span>{{exp.description}}</span>
+                            </v-card-text>
+                        </div>
                     </v-card>
                 </v-timeline-item>
             </v-timeline>
@@ -44,7 +48,7 @@
     background-color: white;
     width: 15%;
     float: right;
-    margin: 20px;
+    margin: 35px;
 }
 .v-timeline {
     padding-top: 0;
