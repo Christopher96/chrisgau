@@ -103,7 +103,7 @@ export default {
             },
             {
                 title: 'International IT College of Sweden',
-                subtitle: 'Informations och mediateknik',
+                subtitle: 'Information and media technology',
                 start: '2012',
                 end: '2015',
                 link: 'https://initcollege.se/',
