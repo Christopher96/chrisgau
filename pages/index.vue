@@ -1,6 +1,5 @@
 <template>
     <v-content class="mt-5">
-        <v-container>
             <v-layout>
                 <v-flex class="text-xs-center">
                     <v-avatar size="200px">
@@ -29,14 +28,19 @@
                 </v-flex>
             </v-layout>
             <v-layout class="mt-5">
-                <v-flex> 
+                <v-flex
+                    lg2
+                    offset-lg1
+                    > 
                     <div
                         class="nav"
-                        color="transparent"
-                        :class="{ 'sticky': sticky }">
+                        :style="'width: ' + menuwidth"
+                        :class="{ 'sticky': sticky && !mobile, 'drawer': mobile }">
                         <v-navigation-drawer
-                            floating
-                            stateless>
+                            :mini-variant.sync="mini"
+                            style="transform:none;"
+                            v-model="drawer"
+                            >
                             <v-list dense>
                                 <v-list-tile
                                     @click="changePage(item)"
@@ -58,7 +62,7 @@
                     </div>
                 </v-flex>
                 <v-flex
-                    md12
+                    lg6
                     v-scroll="stickyCheck"
                     class="pl-5 pr-5">
                     <transition name="page-change">
@@ -66,13 +70,14 @@
                     </transition>
                 </v-flex>
             </v-layout>
-        </v-container>
     </v-content>
 </template>
 
 <style>
-.nav {
-    position: absolute;
+.drawer {
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
 }
 .sticky {
     position: fixed;
@@ -96,6 +101,17 @@ export default {
     created() {
         this.page = this.items[0]
     },
+    computed: {
+        menuwidth() {
+            switch(this.$vuetify.breakpoint.name) {
+                case 'xl': return "300px"
+                default: return "250px"
+            }
+        },
+        mobile() {
+            return this.$vuetify.breakpoint.mdAndDown
+        },
+    },
     methods: {
         stickyCheck(e, el) {
             if(e.pageY > el.offsetTop + 50) {
@@ -103,9 +119,11 @@ export default {
             } else {
                 this.sticky = false
             }
+            if(this.mobile) this.mini = true
             this.topOffset = el.offsetTop
         },
         changePage(page) {
+            this.mini = false
             this.page = page
             window.scrollTo(0, 0)
         }
@@ -117,6 +135,8 @@ export default {
         Experience
     },
     data: ()=> ({
+        mini: false,
+        drawer: false,
         topOffset: 0,
         sticky: false,
         tabs: null,
@@ -124,7 +144,7 @@ export default {
         items: [
             { title: "Applications",  message: "I always have some project going on, constantly eager to learn new things.", icon: "fa-globe", component: Applications },
             { title: "Games", message: "When you are making a game you get to express all of your creativity and ideas.", icon: "fa-gamepad", component: Games },
-            { title: "Experience", message: "IT is my passion and I have been fortunate to have the chance to study and work with it.", icon: "fa-user", component: Experience },
+            { title: "Experience", message: "IT is my passion and I have been fortunate to have the chance to study and work with it.", icon: "fa-certificate", component: Experience },
             { title: "Skills", message: "I have been programming since the age of 15, I am self thaught in most things.", icon: "fa-user", component: Skills },
         ],
         socials: [

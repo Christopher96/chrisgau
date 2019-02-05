@@ -57,6 +57,7 @@ export default {
                 title: 'Cryptohunter',
                 description: 'This is an application built upon the Angular framework. It is a fictional cryptocurrency trading site where you can play around with real currencies updated in real time',
                 link: 'http://cryptohunter.herokuapp.com/',
+                repo: 'https://github.com/Christopher96/cryptohunter',
                 user: {
                     username: "test",
                     password: "test"
@@ -72,9 +73,10 @@ export default {
                 }
             },
             {
-                title: 'MM - Marina Mäkelä',
+                title: 'MM',
                 description: 'This site is designed with the help of Bootstrap and uses Wordpress PHP in the background. It is is a personal website for contact and where you can upload posts and images, it is also supports 3 languages, slideshows and is fully responsive',
                 link: 'http://studenter.miun.se/~chga1600/dt068g/',
+                repo: 'https://github.com/Christopher96/mm'
             },
             {
                 title: 'Bitfire',
