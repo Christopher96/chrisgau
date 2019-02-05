@@ -122,7 +122,7 @@ export default {
         tabs: null,
         page: null,
         items: [
-            { title: "Applications",  message: "I always have some project going on constantly eager to learn new things.", icon: "fa-globe", component: Applications },
+            { title: "Applications",  message: "I always have some project going on, constantly eager to learn new things.", icon: "fa-globe", component: Applications },
             { title: "Games", message: "When you are making a game you get to express all of your creativity and ideas.", icon: "fa-gamepad", component: Games },
             { title: "Experience", message: "IT is my passion and I have been fortunate to have the chance to study and work with it.", icon: "fa-user", component: Experience },
             { title: "Skills", message: "I have been programming since the age of 15, I am self thaught in most things.", icon: "fa-user", component: Skills },

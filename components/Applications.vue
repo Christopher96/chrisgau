@@ -24,6 +24,7 @@
                         :href="site.link"
                         >Check it out</v-btn>
                     <v-btn 
+                        v-if="site.repo"
                         flat 
                         target="_blank"
                         color="purple"
