@@ -35,10 +35,10 @@
             </v-card>
             <v-card class="pa-5 mb-5">
                 <p class="skill headline">Other</p>
-                <p class="subheading">These are some other buzzword technologies I am familiar with.</p>
                 <v-divider></v-divider>
                 <div class="mt-2">
                     <v-chip
+                        label
                         color="blue"
                         text-color="white"
                         class="subheading"
@@ -68,37 +68,6 @@
 export default {
     data: ()=> ({
         skills: { 
-            personality: {
-                color: "blue",
-                low: "No thanks",
-                high: "Lovin it",
-                stats: [
-                    {
-                        title: "Creativity",
-                        progress: 100
-                    },
-                    {
-                        title: "Learning",
-                        progress: 90
-                    }, 
-                    {
-                        title: "Problemsolving",
-                        progress: 90
-                    },
-                    {
-                        title: "Humour",
-                        progress: 80
-                    },
-                    {
-                        title: "Social",
-                        progress: 70
-                    }, 
-                    {
-                        title: "Excel documents",
-                        progress: 10 
-                    }
-                ]
-            },
             "Programming languages": {
                 color: "deep-purple",
                 low: "Noob",
@@ -126,18 +95,22 @@ export default {
                     },
                     { 
                         title: "Java",
+                        progress: 80
+                    },
+                    { 
+                        title: "Python",
                         progress: 70
                     },
                     {
                         title: "SQL",
-                        progress: 70
-                    },
-                    { 
-                        title: "Python",
                         progress: 60
                     },
                     { 
                         title: "C",
+                        progress: 60
+                    },                
+                    { 
+                        title: "BASH",
                         progress: 60
                     }                
                 ]
@@ -221,6 +194,10 @@ export default {
                         progress: 70
                     },
                     {
+                        title: "Adobe Premiere Pro",
+                        progress: 60
+                    },
+                    {
                         title: "Adobe After Effects",
                         progress: 60
                     },
@@ -251,7 +228,7 @@ export default {
             }
         },
         "other": [
-            "Git", "Arch", "Kali", "Ubuntu", "Gulp", "Webpack", "NPM", "Yarn", "Raspberry PI", "Arduino", "Pentesting", "Sysadmin", "Apache", "Adobe Flash", "Nuxt", "Vagrant", "AWS", "Redux"
+            "Git", "Ionic", "PhoneGap", "Gulp", "Webpack", "NPM", "Yarn", "Raspberry PI", "Arduino", "Pentesting", "Sysadmin", "Apache", "Flash", "Nuxt", "Vagrant", "AWS", "Redux", "Gantt", "Agile dev", "Scrum", "SWOT", "Web 2.0", "Arch", "Kali", "Ubuntu", "Typescript"
         ]
     })
 }

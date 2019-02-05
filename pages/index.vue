@@ -10,7 +10,9 @@
                             >
                     </v-avatar>
                         <div class="headline">Christopher Gauffin</div>
-                        <div class="subheading text-xs-center grey--text pt-1 pb-3">Here are some links to my social media and projects</div>
+                        <blockquote class="font-italic subheading ma-3">
+                            <footer>— {{ page.message }}</footer>
+                        </blockquote>
                         <v-layout justify-center>
                             <v-btn
                                 v-for="(social, i) in socials"
@@ -27,39 +29,41 @@
                 </v-flex>
             </v-layout>
             <v-layout class="mt-5">
-                <v-flex md2 offset-md1> 
-                    <v-card
-                        color="transparent"
+                <v-flex> 
+                    <div
                         class="nav"
+                        color="transparent"
                         :class="{ 'sticky': sticky }">
-                          <v-navigation-drawer>
+                        <v-navigation-drawer
+                            floating
+                            stateless>
                             <v-list dense>
-                              <v-list-tile
-                                @click="changePage(item)"
-                                v-for="(item, i) in items"
-                                :key="i"
-                              >
-                                <v-list-tile-action>
-                                    <v-icon>{{ item.icon }}</v-icon>
-                                </v-list-tile-action>
+                                <v-list-tile
+                                    @click="changePage(item)"
+                                    v-for="(item, i) in items"
+                                    :key="i"
+                                    >
+                                    <v-list-tile-action>
+                                        <v-icon>{{ item.icon }}</v-icon>
+                                    </v-list-tile-action>
 
-                                <v-list-tile-content>
-                                  <v-list-tile-title 
-                                      class="subheading"
-                                      :class="{ 'grey--text': item != page }">{{ item.title }}</v-list-tile-title>
-                                </v-list-tile-content>
-                              </v-list-tile>
+                                    <v-list-tile-content>
+                                        <v-list-tile-title 
+                                    class="subheading"
+                                    :class="{ 'grey--text': item != page }">{{ item.title }}</v-list-tile-title>
+                                    </v-list-tile-content>
+                                </v-list-tile>
                             </v-list>
-                          </v-navigation-drawer>
-                    </v-card>
+                        </v-navigation-drawer>
+                    </div>
                 </v-flex>
                 <v-flex
-                    md6
+                    md12
                     v-scroll="stickyCheck"
                     class="pl-5 pr-5">
-                        <transition name="page-change">
-                            <component v-if="page" :is="page.component"></component>
-                        </transition>
+                    <transition name="page-change">
+                    <component v-if="page" :is="page.component"></component>
+                    </transition>
                 </v-flex>
             </v-layout>
         </v-container>
@@ -68,8 +72,7 @@
 
 <style>
 .nav {
-    width: 250px;
-    margin-left: 40px;
+    position: absolute;
 }
 .sticky {
     position: fixed;
@@ -90,7 +93,7 @@ import Experience from '@/components/Experience'
 import Skills from '@/components/Skills'
 
 export default {
-    mounted() {
+    created() {
         this.page = this.items[0]
     },
     methods: {
@@ -104,7 +107,7 @@ export default {
         },
         changePage(page) {
             this.page = page
-            window.scrollTo(0, this.topOffset)
+            window.scrollTo(0, 0)
         }
     },
     components: {
@@ -119,10 +122,10 @@ export default {
         tabs: null,
         page: null,
         items: [
-            { title: "Applications", icon: "fa-globe", component: Applications },
-            { title: "Games", icon: "fa-gamepad", component: Games },
-            { title: "Experience", icon: "fa-user", component: Experience },
-            { title: "Skills", icon: "fa-user", component: Skills },
+            { title: "Applications",  message: "I always have some project going on constantly eager to learn new things.", icon: "fa-globe", component: Applications },
+            { title: "Games", message: "When you are making a game you get to express all of your creativity and ideas.", icon: "fa-gamepad", component: Games },
+            { title: "Experience", message: "IT is my passion and I have been fortunate to have the chance to study and work with it.", icon: "fa-user", component: Experience },
+            { title: "Skills", message: "I have been programming since the age of 15, I am self thaught in most things.", icon: "fa-user", component: Skills },
         ],
         socials: [
             {
