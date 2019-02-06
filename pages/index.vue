@@ -1,75 +1,92 @@
 <template>
     <v-content class="mt-5">
-            <v-layout>
-                <v-flex class="text-xs-center">
-                    <v-avatar size="200px">
-                        <img
-                            class="img-circle elevation-7 mb-5"
-                            src="photo.jpg"
+        <v-layout>
+            <v-flex class="text-xs-center">
+                <v-avatar size="200px">
+                    <img
+                        class="img-circle elevation-7 mb-5"
+                        src="photo.jpg"
+                        >
+                </v-avatar>
+                    <div class="headline">Christopher Gauffin</div>
+                    <blockquote class="font-italic subheading ma-3">
+                        <footer>— {{ page.message }}</footer>
+                    </blockquote>
+                    <v-btn
+                        color="blue-grey"
+                        class="white--text"
+                        href="tel:+46761747578"
+                        >
+                        <v-icon left dark>fa-phone</v-icon>
+                        +46 174 75 78
+                    </v-btn>
+                    <v-btn
+                        color="red"
+                        class="white--text caption"
+                        style="text-transform:lowercase;"
+                        href="mailto:christopher.gauffin@gmail.com"
+                        >
+                        <v-icon left dark>fa-envelope</v-icon>
+                        christopher.gauffin@gmail.com                    
+                    </v-btn>
+                    <v-layout justify-center>
+                        <v-btn
+                            v-for="(social, i) in socials"
+                            :key="i"
+                            target="_blank"
+                            :href="social.link"
+                            :color="social.color"
+                            class="white--text"
+                            icon
                             >
-                    </v-avatar>
-                        <div class="headline">Christopher Gauffin</div>
-                        <blockquote class="font-italic subheading ma-3">
-                            <footer>— {{ page.message }}</footer>
-                        </blockquote>
-                        <v-layout justify-center>
-                            <v-btn
-                                v-for="(social, i) in socials"
+                            <v-icon>{{ social.icon }}</v-icon>
+                        </v-btn>
+                    </v-layout>
+            </v-flex>
+        </v-layout>
+        <v-layout class="mt-5">
+            <v-flex
+                lg2
+                offset-lg1
+                > 
+                <div
+                    class="nav"
+                    :style="'width: ' + menuwidth"
+                    :class="{ 'sticky': sticky && !mobile, 'drawer': mobile }">
+                    <v-navigation-drawer
+                        :mini-variant.sync="mini"
+                        style="transform:none;"
+                        v-model="drawer"
+                        >
+                        <v-list dense>
+                            <v-list-tile
+                                @click="changePage(item)"
+                                v-for="(item, i) in items"
                                 :key="i"
-                                target="_blank"
-                                :href="social.link"
-                                :color="social.color"
-                                class="white--text"
-                                icon
                                 >
-                                <v-icon>{{ social.icon }}</v-icon>
-                            </v-btn>
-                        </v-layout>
-                </v-flex>
-            </v-layout>
-            <v-layout class="mt-5">
-                <v-flex
-                    lg2
-                    offset-lg1
-                    > 
-                    <div
-                        class="nav"
-                        :style="'width: ' + menuwidth"
-                        :class="{ 'sticky': sticky && !mobile, 'drawer': mobile }">
-                        <v-navigation-drawer
-                            :mini-variant.sync="mini"
-                            style="transform:none;"
-                            v-model="drawer"
-                            >
-                            <v-list dense>
-                                <v-list-tile
-                                    @click="changePage(item)"
-                                    v-for="(item, i) in items"
-                                    :key="i"
-                                    >
-                                    <v-list-tile-action>
-                                        <v-icon>{{ item.icon }}</v-icon>
-                                    </v-list-tile-action>
+                                <v-list-tile-action>
+                                    <v-icon>{{ item.icon }}</v-icon>
+                                </v-list-tile-action>
 
-                                    <v-list-tile-content>
-                                        <v-list-tile-title 
-                                    class="subheading"
-                                    :class="{ 'grey--text': item != page }">{{ item.title }}</v-list-tile-title>
-                                    </v-list-tile-content>
-                                </v-list-tile>
-                            </v-list>
-                        </v-navigation-drawer>
-                    </div>
-                </v-flex>
-                <v-flex
-                    lg6
-                    v-scroll="stickyCheck"
-                    class="pl-5 pr-5">
-                    <transition name="page-change">
-                    <component v-if="page" :is="page.component"></component>
-                    </transition>
-                </v-flex>
-            </v-layout>
+                        <v-list-tile-content>
+                            <v-list-tile-title 
+                                class="subheading"
+                                :class="{ 'grey--text': item != page }">{{ item.title }}</v-list-tile-title>
+                        </v-list-tile-content>
+                            </v-list-tile>
+                        </v-list>
+                    </v-navigation-drawer>
+                </div>
+            </v-flex>
+            <v-flex
+                lg6
+                v-scroll="stickyCheck"
+                class="pl-5 pr-5">
+                <transition name="page-change">
+                <component v-if="page" :is="page.component"></component>
+                </transition>
+            </v-flex>
+        </v-layout>
     </v-content>
 </template>
 
