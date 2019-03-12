@@ -228,7 +228,7 @@ export default {
             }
         },
         "other": [
-            "Git", "Ionic", "PhoneGap", "Gulp", "Webpack", "NPM", "Yarn", "Raspberry PI", "Arduino", "Pentesting", "Sysadmin", "Apache", "Flash", "Nuxt", "Vagrant", "Gantt", "Agile dev", "Scrum", "SWOT", "Web 2.0", "Arch", "Kali", "Ubuntu", "Typescript", "SCSS", "XAMPP", "SSH", "PHPMyAdmin", "Partitioning", "SOAP", "RESTful", "JSON", "XML"
+            "Sales pitching", "Project leadership", "Pedagocial skills", "Git", "Ionic", "PhoneGap", "Gulp", "Webpack", "NPM", "Yarn", "Raspberry PI", "Arduino", "Pentesting", "Sysadmin", "Apache", "Flash", "Nuxt", "Vagrant", "Gantt", "SWOT", "Web 2.0", "Arch", "Kali", "Ubuntu", "Typescript", "SCSS", "XAMPP", "SSH", "PHPMyAdmin", "Partitioning", "SOAP", "RESTful", "JSON", "XML", "Processor programming"
         ]
     })
 }

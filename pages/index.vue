@@ -166,11 +166,6 @@ export default {
         ],
         socials: [
             {
-                icon: 'fa-facebook',
-                color: 'indigo',
-                link: 'https://www.facebook.com/syphez'
-            },
-            {
                 icon: 'fa-linkedin',
                 color: 'cyan darken-1',
                 link: 'https://www.linkedin.com/in/christopher-gauffin-745731b6'
