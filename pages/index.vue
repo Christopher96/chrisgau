@@ -18,7 +18,7 @@
                         href="tel:+46761747578"
                         >
                         <v-icon left dark>fa-phone</v-icon>
-                        +46 174 75 78
+                        +46 76 174 75 78
                     </v-btn>
                     <v-btn
                         color="red"
