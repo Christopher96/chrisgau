@@ -2,10 +2,8 @@
     <v-layout justify-center row>
         <v-flex>
             <v-card
-                class="pa-5 mb-5"
                 v-for="(skill, name) in skills"
-                :key="name"
-                >
+                :key="name">
                 <p class="skill headline">{{name}}</p>
                 <v-divider></v-divider>
                 <div
@@ -13,8 +11,9 @@
                     :key="i"
                     class="pt-1 pb-1"
                 >
-                    <span class="subheading">{{stat.title}}</span>
+                    <span class="skilltitle subheading">{{stat.title}}</span>
                     <v-progress-linear 
+                          class="skillbar"
                         v-in-viewport
                         :color="skill.color"
                         height="10"
@@ -33,7 +32,7 @@
                     </p>
                 </div>
             </v-card>
-            <v-card class="pa-5 mb-5">
+            <v-card>
                 <p class="skill headline">Other</p>
                 <v-divider></v-divider>
                 <div class="mt-2">
@@ -70,8 +69,6 @@ export default {
         skills: { 
             "Programming languages": {
                 color: "deep-purple",
-                low: "Noob",
-                high: "Senpai",
                 stats: [
                     {
                         title: "HTML",
@@ -79,36 +76,36 @@ export default {
                     },
                     { 
                         title: "JavaScript",
-                        progress: 90
+                        progress: 100
                     },
                     { 
                         title: "CSS",
-                        progress: 90
+                        progress: 100
                     },
                     { 
                         title: "PHP",
-                        progress: 80
+                        progress: 90
                     },
                     { 
                         title: "C#",
-                        progress: 80
+                        progress: 90
                     },
                     { 
                         title: "Java",
-                        progress: 80
+                        progress: 90
                     },
                     { 
                         title: "Python",
-                        progress: 70
+                        progress: 80
                     },
+                    { 
+                        title: "C",
+                        progress: 80
+                    },                
                     {
                         title: "SQL",
                         progress: 60
                     },
-                    { 
-                        title: "C",
-                        progress: 60
-                    },                
                     { 
                         title: "BASH",
                         progress: 60
@@ -117,8 +114,6 @@ export default {
             },
             frameworks: {
                 color: "yellow",
-                low: "U wot m8?",
-                high: "Master",
                 stats: [
                     {
                         title: "jQuery",
@@ -133,39 +128,37 @@ export default {
                         progress: 90
                     },
                     {
-                        title: "Vue JS/Vuetify",
-                        progress: 70
+                        title: "Vue JS",
+                        progress: 80
                     },
                     {
                         title: "Express (Node JS)",
                         progress: 70
                     },
                     {
-                        title: ".NET",
-                        progress: 60
-                    },
-                    {
                         title: "React JS", 
-                        progress: 50
+                        progress: 70
                     },
                     {
                         title: "Angular JS", 
-                        progress: 50
+                        progress: 60
+                    },
+                    {
+                        title: ".NET",
+                        progress: 60
                     }
                 ],
             },
             databases: {
                 color: "green",
-                low: "Floppydrives?",
-                high: "Dataguru",
                 stats: [
                     {
                         title: "MySQL",
-                        progress: 90
+                        progress: 100
                     }, 
                     {
                         title: "MongoDB",
-                        progress: 70
+                        progress: 90
                     }, 
                     {
                         title: "Microsoft SQL",
@@ -174,16 +167,14 @@ export default {
             },
             tools: {
                 color: "teal",
-                low: "Scrub",
-                high: "Pro",
                 stats: [
                     {
                         title: "Adobe Photoshop",
-                        progress: 90
+                        progress: 100
                     },
                     {
                         title: "Unity (C#)",
-                        progress: 80
+                        progress: 90
                     },
                     {
                         title: "Sony Vegas",
@@ -191,11 +182,11 @@ export default {
                     },
                     {
                         title: "Adobe Animate",
-                        progress: 70
+                        progress: 80
                     },
                     {
                         title: "Adobe Premiere Pro",
-                        progress: 60
+                        progress: 70
                     },
                     {
                         title: "Adobe After Effects",
@@ -209,8 +200,6 @@ export default {
             },
             "Operating systems": {
                 color: "red",
-                low: "Scriptkiddie",
-                high: "Hacker",
                 stats: [
                     {
                         title: "Linux",

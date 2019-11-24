@@ -3,8 +3,7 @@
         <v-flex>
             <v-card 
                 v-for="(game, i) in games"
-                :key="i"
-                class="pa-4 mb-5">
+                :key="i">
                 <v-card-title primary-title>
                         <div>
                             <div class="headline">{{ game.title }}</div>

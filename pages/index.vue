@@ -81,9 +81,9 @@
             <v-flex
                 lg6
                 v-scroll="stickyCheck"
-                class="pl-5 pr-5">
+                class="pl-2 pr-2">
                 <transition name="page-change">
-                <component v-if="page" :is="page.component"></component>
+                <component :class="{'desktop': !mobile}" v-if="page" :is="page.component"></component>
                 </transition>
             </v-flex>
         </v-layout>
@@ -106,6 +106,15 @@
 .page-change-enter-active {
     transition: all .5s ease;
 }
+
+.desktop .v-card {
+    padding: 2em;
+} 
+
+.v-card {
+    margin-bottom: 2em;
+}
+
 </style>
 
 <script>

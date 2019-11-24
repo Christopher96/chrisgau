@@ -3,8 +3,7 @@
         <v-flex>
             <v-card 
                 v-for="(site, i) in sites"
-                :key="i"
-                class="pa-4 mb-5">
+                :key="i">
                 <v-card-title primary-title>
                         <div>
                             <div class="headline">{{ site.title }}</div>
@@ -19,6 +18,7 @@
                 <v-card-actions>
                     <v-btn 
                         flat 
+                        v-if="site.link"
                         target="_blank"
                         color="purple"
                         :href="site.link"
@@ -42,6 +42,19 @@
 export default {
     data: ()=> ({
         sites: [
+            {
+                id: 'dixitonline',
+                title: 'Dixit online',
+                description: 'An online version of the game Dixit made with the React framework as frontend. A lightweight back end server is run behind the scenes to store saved games and for making calls to the Unsplash API. The backend serves as a RESTful API where simple endpoints are used for fetching and storing data built on Express and MongoDB. The game is deployed with Heroku',
+                link: 'http://dixitonline.herokuapp.com/',
+                repo: 'https://github.com/Christopher96/dixit-online'
+            },
+            {
+                id: "simonsays",
+                title: "Simon Says Chipkit",
+                description: "This project is a interactive game inspired by the classical \"Simon Says\". Simon says a color and the player has to repeat the pattern that is given to them by pressing the buttons on the breadboard. If the player fail to do so it's game over. The game program is built upon different components which are using different kinds of protocols and configurations of the available ports on the board.",
+                repo: "https://github.com/Christopher96/simon-says-chipkit"
+            },
             {
                 id: 'addswift',
                 title: 'Addswift',
