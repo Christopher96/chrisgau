@@ -81,7 +81,7 @@
             <v-flex
                 lg6
                 v-scroll="stickyCheck"
-                class="pl-2 pr-2">
+                class="cards pl-2 pr-2">
                 <transition name="page-change">
                 <component :class="{'desktop': !mobile}" v-if="page" :is="page.component"></component>
                 </transition>
@@ -113,6 +113,10 @@
 
 .v-card {
     margin-bottom: 2em;
+}
+
+.cards {
+    padding-bottom: 20em;
 }
 
 </style>

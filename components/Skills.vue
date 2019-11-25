@@ -1,6 +1,6 @@
 <template>
     <v-layout justify-center row>
-        <v-flex>
+        <v-flex class="skills">
             <v-card
                 v-for="(skill, name) in skills"
                 :key="name">
@@ -53,6 +53,10 @@
 <style>
 .skill {
     text-transform: capitalize;
+}
+
+.desktop .skills .v-card {
+    padding: 3em;
 }
 
 .v-progress-linear__bar__determinate {

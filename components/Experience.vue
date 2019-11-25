@@ -1,32 +1,32 @@
 <template>
     <v-layout justify-center row>
         <v-flex>
-                    <v-card 
-                            v-for="(exp, i) in experience"
-                        :key="i"
-                        class="elevation-2"
-                        >
-                        <div class="grey darken-2 banner subheading">
-                            {{exp.start}}<span v-if="exp.end"> - {{exp.end}}</span>
-                        </div>
-                        <div class="logo">
-                            <v-card-media 
-                              :src="'experience/'+exp.logo"
-                              max-height="100"
-                              contain></v-card-media>
-                        </div>
-                        <div class="pa-0">
-                            <v-card-title>
-                                <span class="headline">{{exp.title}}</span><br/>
-                            </v-card-title>
-                            <v-card-title>
-                                <i class="subheading">{{exp.subtitle}}</i>
-                            </v-card-title>
-                            <v-card-text>
-                                <span>{{exp.description}}</span>
-                            </v-card-text>
-                        </div>
-                    </v-card>
+            <v-card 
+              v-for="(exp, i) in experience"
+              :key="i"
+              class="elevation-2"
+              >
+              <div class="grey darken-2 banner subheading">
+                  {{exp.start}}<span v-if="exp.end"> - {{exp.end}}</span>
+              </div>
+              <div class="logo">
+                  <v-card-media 
+                   :src="'experience/'+exp.logo"
+                   max-height="100"
+                   contain></v-card-media>
+              </div>
+              <div>
+                  <v-card-title>
+                      <span class="headline">{{exp.title}}</span><br/>
+                  </v-card-title>
+                  <v-card-title>
+                      <i class="subheading">{{exp.subtitle}}</i>
+                  </v-card-title>
+                  <v-card-text>
+                      <span>{{exp.description}}</span>
+                  </v-card-text>
+              </div>
+            </v-card>
         </v-flex>
     </v-layout>
 </template>
@@ -36,6 +36,7 @@
     background-color: white;
     text-align: center;
     padding: 10px;
+    margin: 0 18px;
 }
 .logo {
     background-color: white;
@@ -49,11 +50,6 @@
 
 .v-card__title {
     padding-bottom: 0;
-}
-.v-timeline-item__opposite {
-    display: initial !important;
-    margin: 0 !important;
-    text-align: left !important;
 }
 
 .desktop .logo {

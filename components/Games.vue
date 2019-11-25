@@ -4,17 +4,20 @@
             <v-card 
                 v-for="(game, i) in games"
                 :key="i">
-                <v-card-title primary-title>
+                <v-card-title 
+                    class="mb-2"
+                    primary-title>
                         <div>
-                            <div class="headline">{{ game.title }}</div>
+                            <div class="headline mb-2">{{ game.title }}</div>
                             <span class="subheading grey--text">{{ game.description }}</span>
                         </div>
                 </v-card-title>
-                <v-card-actions>
+                <v-card-actions
+                    class="pa-3"
+                    >
                     <v-btn 
-                    flat 
+                    outlined
                     target="_blank"
-                    color="purple"
                     :href="game.link"
                     >Repository</v-btn>
                     <v-spacer></v-spacer>
