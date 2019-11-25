@@ -67,7 +67,7 @@ export default {
                 id: "arduinochat",
                 title: "Arduino Chat",
                 description: "A message station that can receive and transfer text to a smartphone via bluetooth. The user of the message station can write a message with a joystick and receive messages on a display. The user of the smartphone can see what the other user has written and respond with their own messages.",
-                repo: "https://github.com/Christopher96/simon-says-chipkit"
+                repo: "https://github.com/Christopher96/arduino-chat"
             },
             {
                 id: 'addswift',
