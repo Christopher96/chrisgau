@@ -104,16 +104,16 @@ export default {
                     },
                     { 
                         title: "C",
-                        progress: 80
+                        progress: 70
+                    },                
+                    { 
+                        title: "C++",
+                        progress: 70
                     },                
                     {
                         title: "SQL",
                         progress: 60
-                    },
-                    { 
-                        title: "BASH",
-                        progress: 60
-                    }                
+                    }
                 ]
             },
             frameworks: {
