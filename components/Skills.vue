@@ -113,6 +113,10 @@ export default {
                     {
                         title: "SQL",
                         progress: 60
+                    },
+                    {
+                        title: "Prolog",
+                        progress: 50
                     }
                 ]
             },
