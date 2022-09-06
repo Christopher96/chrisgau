@@ -4,14 +4,20 @@
             <v-card 
                 v-for="(game, i) in games"
                 :key="i">
-                <v-card-title 
-                    class="mb-2"
-                    primary-title>
-                        <div>
-                            <div class="headline mb-2">{{ game.title }}</div>
-                            <span class="subheading grey--text">{{ game.description }}</span>
-                        </div>
-                </v-card-title>
+                <div v-if="game.logo" class="logo">
+                  <v-card-media 
+                   :src="'games/'+game.logo"
+                   max-height="100"
+                   contain></v-card-media>
+                </div>
+                <div>
+                    <v-card-title>
+                        <span class="headline">{{game.title}}</span><br/>
+                    </v-card-title>
+                    <v-card-text class="grey--text text--lighten-2">
+                        {{game.description}}
+                    </v-card-text>
+                </div>
                 <v-card-actions
                     class="pa-3"
                     >
@@ -36,22 +42,25 @@ export default {
                 title: 'RPG',
                 description: 'This is my most sofisticated game so far I have made, it is still in development and not released yet, although I have learned a tremendous amount about Unity\'s capabilities and it\'s scripting API making this game. It\s an RPG game so this involves quests, leveling, combat, dialogs, exploration, inventory, spells and a custom made UI to handle all of those things.',
                 link: 'https://gitlab.com/Christopher96/RPG',
-                id: 'rpg'
+                id: 'rpg',
+                logo: 'rpg.png'
             },
             {
                 title: 'Fly & Sh*t',
-                description: 'This is a fun and dumb game where you control a bird that flies through a city where you have to dodge cars and lamps to survive. Extra points is given for taking a dump on cars. The bird is controlled through the mobile accelorometer which is configured dyanmically at the start of the game. When making this game I learned the complete process of coming up with and idea, making a plan, preparing all the assets and compiling and uploading the whole thing to the Google Play store, which trust me, is a tedious process.',
+                description: 'This is a fun game where you control a bird that flies through a city where you have to dodge cars and lamps to survive. The bird is controlled through the mobile accelorometer which is configured dyanmically at the start of the game. When making this game I learned the complete process of coming up with and idea, making a plan, preparing all the assets and compiling and uploading the whole thing to the Google Play store, which trust me, is a tedious process.',
                 link: 'https://gitlab.com/Christopher96/FlyAndShit',
-                id: 'flyandshit'
+                id: 'flyandshit',
+                logo: 'flyandshit.png'
             },
             {
-                title: 'Disco ninja',
+                title: 'Disco Ninja',
                 description: 'This project required a good amount of planning and developing but was also really engaging to make since I used many of my different skills such as animation in flash, creating assets in photoshop and writing plugins in Java which are bridged to C#. The idea is that the user can choose any song they want from their phone which will be synchronized in the game.', 
                 link: 'https://gitlab.com/Christopher96/Disconinja',
-                id: 'disconinja'
+                id: 'disconinja',
+                logo: 'disconinja.png'
             },
             {
-                title: 'Fruitcatch',
+                title: 'Fruit Catch',
                 description: 'Back when Flash was widely used I made this simple yet fun game where you drag your finger across the screen to move the basket horizontally to catch fruit falling from the sky, the amount of fruits and the speed of them increase the higher level you reach. This game gave me more knowledge for flash based applications and animations and the scripting language Actionscript 3.',
                 id: 'fruitcatch'
             },

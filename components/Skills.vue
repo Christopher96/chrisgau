@@ -4,25 +4,31 @@
             <v-card
                 v-for="(skill, name) in skills"
                 :key="name">
-                <p class="skill headline">{{name}}</p>
-                <v-divider></v-divider>
-                <div
+                <p class="headline">{{name}}</p>
+                <v-divider class="mb-3"></v-divider>
+                <table>
+                <tr
                     v-for="(stat, i) in skill.stats"
                     :key="i"
-                    class="pt-1 pb-1"
+                    class="skill"
                 >
-                    <span class="skilltitle subheading">{{stat.title}}</span>
-                    <v-progress-linear 
-                          class="skillbar"
-                        v-in-viewport
-                        :color="skill.color"
-                        height="10"
-                        v-model="stat.progress"
-                    >
-                    </v-progress-linear>
-                </div>
-                <v-divider></v-divider>
-                <div class="d-flex">
+                    <td>
+                        <span class="skilltitle subheading">{{stat.title}}</span>
+                    </td>
+                    <td class="skillbar-container">
+                        <v-progress-linear 
+                            class="skillbar"
+                            v-in-viewport
+                            :color="skill.color"
+                            height="10"
+                            v-model="stat.progress"
+                        >
+                        </v-progress-linear>
+                    </td>
+                </tr>
+                </table>
+                <v-divider class="mt-3"></v-divider>
+                <div class="mt-3 d-flex">
                     <p class="text-md-left">
                         <i class="subheading">Beginner</i>
                     </p>
@@ -33,7 +39,7 @@
                 </div>
             </v-card>
             <v-card>
-                <p class="skill headline">Other</p>
+                <p class="headline">Other technologies</p>
                 <v-divider></v-divider>
                 <div class="mt-2">
                     <v-chip
@@ -47,12 +53,35 @@
                     </v-chip>
                 </div>
             </v-card>
+            <v-card>
+                <p class="headline">Expertise and qualities</p>
+                <v-divider></v-divider>
+                <div class="mt-2">
+                    <v-chip
+                        label
+                        color="deep-orange darken-4"
+                        text-color="white"
+                        class="subheading"
+                        v-for="(name, i) in qualities"
+                        :key="i">
+                        {{name}}
+                    </v-chip>
+                </div>
+            </v-card>
         </v-flex>
     </v-layout>
 </template>
 <style>
 .skill {
-    text-transform: capitalize;
+    height: 3rem;
+}
+.skilltitle {
+    white-space: nowrap;
+}
+
+.skillbar-container {
+    padding-left: 1em;
+    width: 100%;
 }
 
 .desktop .skills .v-card {
@@ -79,7 +108,7 @@ export default {
                         progress: 100
                     },
                     { 
-                        title: "JavaScript",
+                        title: "Typescript",
                         progress: 100
                     },
                     { 
@@ -87,7 +116,11 @@ export default {
                         progress: 100
                     },
                     { 
-                        title: "PHP",
+                        title: "Python",
+                        progress: 100
+                    },
+                    { 
+                        title: "C",
                         progress: 90
                     },
                     { 
@@ -99,30 +132,46 @@ export default {
                         progress: 90
                     },
                     { 
-                        title: "Python",
+                        title: "PHP",
+                        progress: 90
+                    },
+                    { 
+                        title: "Bash",
                         progress: 80
                     },
                     { 
-                        title: "C",
-                        progress: 70
-                    },                
-                    { 
                         title: "C++",
                         progress: 70
-                    },                
+                    },   
                     {
                         title: "SQL",
-                        progress: 60
+                        progress: 70
                     },
                     {
-                        title: "Prolog",
-                        progress: 50
+                        title: "Ocaml",
+                        progress: 60
+                    },  
+                    {
+                        title: "Elixir",
+                        progress: 60
                     }
                 ]
             },
-            frameworks: {
+            "Frameworks and libraries": {
                 color: "yellow",
                 stats: [
+                    {
+                        title: "Node JS", 
+                        progress: 100
+                    },
+                    {
+                        title: "React", 
+                        progress: 100
+                    },
+                    {
+                        title: "Express",
+                        progress: 100
+                    },
                     {
                         title: "jQuery",
                         progress: 100
@@ -136,28 +185,32 @@ export default {
                         progress: 90
                     },
                     {
-                        title: "Vue JS",
+                        title: "Vue",
                         progress: 80
                     },
                     {
-                        title: "Express (Node JS)",
-                        progress: 70
+                        title: "Ionic", 
+                        progress: 60
                     },
                     {
-                        title: "React JS", 
-                        progress: 70
-                    },
-                    {
-                        title: "Angular JS", 
+                        title: "Angular", 
                         progress: 60
                     },
                     {
                         title: ".NET",
                         progress: 60
+                    },
+                    {
+                        title: "Laravel", 
+                        progress: 50
+                    },
+                    {
+                        title: "Django", 
+                        progress: 50
                     }
                 ],
             },
-            databases: {
+            "Databases": {
                 color: "green",
                 stats: [
                     {
@@ -170,10 +223,15 @@ export default {
                     }, 
                     {
                         title: "Microsoft SQL",
+                        progress: 70
+                    },
+                    {
+                        title: "Elasticsearch",
                         progress: 60
-                    }                ]
+                    }                
+                ]
             },
-            tools: {
+            "Tools": {
                 color: "teal",
                 stats: [
                     {
@@ -214,18 +272,37 @@ export default {
                         progress: 90
                     },
                     {
-                        title: "MacOS",
-                        progress: 70
+                        title: "Android",
+                        progress: 80
                     },
                     {
                         title: "Windows",
+                        progress: 70
+                    },
+                    {
+                        title: "IOS",
                         progress: 60
-                    }
+                    },
+                    {
+                        title: "MacOS",
+                        progress: 60
+                    },
                 ]
             }
         },
         "other": [
-            "Sales pitching", "Project leadership", "Pedagocial skills", "Git", "Ionic", "PhoneGap", "Gulp", "Webpack", "NPM", "Yarn", "Raspberry PI", "Arduino", "Pentesting", "Sysadmin", "Apache", "Flash", "Nuxt", "Vagrant", "Gantt", "SWOT", "Web 2.0", "Arch", "Kali", "Ubuntu", "Typescript", "SCSS", "XAMPP", "SSH", "PHPMyAdmin", "Partitioning", "SOAP", "RESTful", "JSON", "XML", "Processor programming"
+            "Jira", "Confluence", "Trello", "Jenkins", "AWS", "Heroku", "Docker", "Git", "NPM", "Yarn", "Tensorflow", "Pandas", "NumPy", "Scikit-learn",
+            "MATLAB", "X86 Assembly", "MIPS Assembly", "Webpack", "Gulp", "Groovy", "Raspberry PI", "Arduino", "Cmake", "Scons", "Make", "PostgreSQL",
+            "Ionic", "PhoneGap", "React Native", "Electron", "Apache", "Flash", "Nuxt", "Vuetify", "Vagrant", "Web 2.0", "Web 3.0", "Arch", "Kali", "Ubuntu",
+            "Typescript", "Golang", "SCSS", "XAMPP", "SSH", "PHPMyAdmin", "SOAP", "RESTful", "OAuth", "MVC",
+            "JSON", "XML", "SWOT Analysis", "Gantt"
+        ],
+        "qualities": [
+            "Data Science", "Artificial Intelligence", "Machine Learning", "Discrete Mathematics", "Numerical Methods", "Probability Theory and Statistics", "Calculus", "Networks", 
+            "Embedded Engineering", "Digital Design", "Algorithms and Datastructures", "Computer Systems Architechture", "Parallell and Distributed Computing", "Neuroscience", 
+            "Processor Programming", "Compiler and Execution Environments", "Penetration Testing", "System Administration", "Cryptography", "Hardware Security", 
+            "Network Security", "Web Security", "Fullstack", "Web Design", "Cloud Services", "Automation", "DevOps", "Microservices", "Sales Pitching", "Project Leadership", "Pedagocial Skills", 
+            "ICT and Innovation"
         ]
     })
 }
