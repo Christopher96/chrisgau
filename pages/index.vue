@@ -183,9 +183,9 @@ export default {
         tabs: null,
         page: null,
         items: [
+            { title: "Experience", message: "Computer science and engineering are my passions and I have had the fortune to study and work within the fields.", icon: "fa-certificate", component: Experience },
             { title: "Applications",  message: "I always have some project going on, constantly eager to expand my knowledge.", icon: "fa-globe", component: Applications },
             { title: "Games", message: "When you are making a game you get to express all of your creativity and ideas.", icon: "fa-gamepad", component: Games },
-            { title: "Experience", message: "Computer science is my passion and I have been fortunate to have the chance to study and work with it.", icon: "fa-certificate", component: Experience },
             { title: "Skills", message: "I have been programming since the age of 15, I am self taught in most things.", icon: "fa-user", component: Skills },
         ],
         socials: [

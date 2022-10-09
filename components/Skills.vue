@@ -39,7 +39,7 @@
                 </div>
             </v-card>
             <v-card>
-                <p class="headline">Other technologies</p>
+                <p class="headline">Other knowledge</p>
                 <v-divider></v-divider>
                 <div class="mt-2">
                     <v-chip
@@ -292,9 +292,9 @@ export default {
         },
         "other": [
             "Jira", "Confluence", "Trello", "Jenkins", "AWS", "Heroku", "Docker", "Git", "NPM", "Yarn", "Tensorflow", "Pandas", "NumPy", "Scikit-learn",
-            "MATLAB", "X86 Assembly", "MIPS Assembly", "Webpack", "Gulp", "Groovy", "Raspberry PI", "Arduino", "Cmake", "Scons", "Make", "PostgreSQL",
-            "Ionic", "PhoneGap", "React Native", "Electron", "Apache", "Flash", "Nuxt", "Vuetify", "Vagrant", "Web 2.0", "Web 3.0", "Arch", "Kali", "Ubuntu",
-            "Typescript", "Golang", "SCSS", "XAMPP", "SSH", "PHPMyAdmin", "SOAP", "RESTful", "OAuth", "MVC",
+            "MATLAB", "Golang", "X86 Assembly", "MIPS Assembly", "Webpack", "Gulp", "Groovy", "Raspberry PI", "Arduino", "Cmake", "Scons", "Make", "SQL",
+            "Ionic", "PhoneGap", "React Native", "Electron", "Apache", "Flash", "Nuxt", "Vuetify", "Vagrant", "Web 3.0", "Arch", "Kali", "Ubuntu",
+            "Typescript", "SCSS", "XAMPP", "SSH", "PHPMyAdmin", "SOAP", "RESTful", "OAuth", "MVC",
             "JSON", "XML", "SWOT Analysis", "Gantt"
         ],
         "qualities": [
@@ -305,5 +305,6 @@ export default {
             "ICT and Innovation"
         ]
     })
+
 }
 </script>

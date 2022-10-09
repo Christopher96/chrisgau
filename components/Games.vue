@@ -46,6 +46,13 @@ export default {
                 logo: 'rpg.png'
             },
             {
+                id: 'dixitonline',
+                title: 'Dixit online',
+                description: 'An online version of the game Dixit made with the React framework as frontend. A lightweight back end server is run behind the scenes to store saved games and for making calls to the Unsplash API. The backend serves as a RESTful API where simple endpoints are used for fetching and storing data built on Express and MongoDB. The game is deployed with Heroku.',
+                repo: 'https://github.com/Christopher96/dixit-online',
+                logo: 'dixit.png'
+            },
+            {
                 title: 'Fly & Sh*t',
                 description: 'This is a fun game where you control a bird that flies through a city where you have to dodge cars and lamps to survive. The bird is controlled through the mobile accelorometer which is configured dyanmically at the start of the game. When making this game I learned the complete process of coming up with and idea, making a plan, preparing all the assets and compiling and uploading the whole thing to the Google Play store, which trust me, is a tedious process.',
                 link: 'https://gitlab.com/Christopher96/FlyAndShit',
@@ -58,16 +65,6 @@ export default {
                 link: 'https://gitlab.com/Christopher96/Disconinja',
                 id: 'disconinja',
                 logo: 'disconinja.png'
-            },
-            {
-                title: 'Fruit Catch',
-                description: 'Back when Flash was widely used I made this simple yet fun game where you drag your finger across the screen to move the basket horizontally to catch fruit falling from the sky, the amount of fruits and the speed of them increase the higher level you reach. This game gave me more knowledge for flash based applications and animations and the scripting language Actionscript 3.',
-                id: 'fruitcatch'
-            },
-            {
-                title: 'Hangman',
-                description: 'This is my first game I have ever made which I initially started out making as a normal html/js type game in the browser, later I reused the revamped the code to make it playable on mobile. I used the Ionic framework to convert the game from a static site to a Single Page Application with native mobile components.',
-                id: 'hangman'
             },
         ]
     })
