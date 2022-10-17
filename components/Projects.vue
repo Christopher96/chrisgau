@@ -67,7 +67,7 @@ export default {
                     { name: "Client", link: 'https://github.com/Christopher96/lumi-client'},
                     { name: "Server", link: 'https://github.com/Christopher96/lumi-server'}
                 ],
-                logo: 'lumi.png',
+                logo: 'lumi_outline.png',
                 no_padding: true
             },
             {
