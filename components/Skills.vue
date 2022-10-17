@@ -148,6 +148,10 @@ export default {
                         progress: 70
                     },
                     {
+                        title: "Golang",
+                        progress: 60
+                    },
+                    {
                         title: "Ocaml",
                         progress: 60
                     },  
@@ -197,6 +201,10 @@ export default {
                         progress: 60
                     },
                     {
+                        title: "Elastic Search",
+                        progress: 60
+                    },                
+                    {
                         title: ".NET",
                         progress: 60
                     },
@@ -225,10 +233,6 @@ export default {
                         title: "Microsoft SQL",
                         progress: 70
                     },
-                    {
-                        title: "Elasticsearch",
-                        progress: 60
-                    }                
                 ]
             },
             "Tools": {
@@ -292,16 +296,15 @@ export default {
         },
         "other": [
             "Jira", "Confluence", "Trello", "Jenkins", "AWS", "Heroku", "Docker", "Git", "NPM", "Yarn", "Tensorflow", "Pandas", "NumPy", "Scikit-learn",
-            "MATLAB", "Golang", "X86 Assembly", "MIPS Assembly", "Webpack", "Gulp", "Groovy", "Raspberry PI", "Arduino", "Cmake", "Scons", "Make", "SQL",
+            "MATLAB", "X86 Assembly", "MIPS Assembly", "Webpack", "Gulp", "Groovy", "Raspberry PI", "Arduino", "Cmake", "Scons", "Make", "SQL",
             "Ionic", "PhoneGap", "React Native", "Electron", "Apache", "Flash", "Nuxt", "Vuetify", "Vagrant", "Web 3.0", "Arch", "Kali", "Ubuntu",
             "Typescript", "SCSS", "XAMPP", "SSH", "PHPMyAdmin", "SOAP", "RESTful", "OAuth", "MVC",
             "JSON", "XML", "SWOT Analysis", "Gantt"
         ],
         "qualities": [
-            "Data Science", "Artificial Intelligence", "Machine Learning", "Discrete Mathematics", "Numerical Methods", "Probability Theory and Statistics", "Calculus", "Networks", 
-            "Embedded Engineering", "Digital Design", "Algorithms and Datastructures", "Computer Systems Architechture", "Parallell and Distributed Computing", "Neuroscience", 
-            "Processor Programming", "Compiler and Execution Environments", "Penetration Testing", "System Administration", "Cryptography", "Hardware Security", 
-            "Network Security", "Web Security", "Fullstack", "Web Design", "Cloud Services", "Automation", "DevOps", "Microservices", "Sales Pitching", "Project Leadership", "Pedagocial Skills", 
+            "Fast learner", "Project Leadership", "Pedagocial Skills", "Data Science", "Artificial Intelligence", "Machine Learning", "Discrete Mathematics", "Numerical Methods", "Probability Theory and Statistics", "Calculus", "Networks", "Embedded Engineering", "Digital Design", "Algorithms and Datastructures", "Computer Systems Architechture", "Parallell and Distributed Computing", "Neuroscience", 
+            "Processor Design", "Compiler and Execution Environments", "Penetration Testing", "System Administration", "Cryptography", "Hardware Security", 
+            "Network Security", "Web Security", "Fullstack", "Web Design", "Cloud Services", "Automation", "DevOps", "Microservices", "Sales Pitching",  
             "ICT and Innovation"
         ]
     })

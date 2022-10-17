@@ -4,7 +4,7 @@
             <v-card 
                 v-for="(app, i) in apps"
                 :key="i">
-                <div v-if="app.logo" class="logo" :class="{ no_bg: app.no_bg }">
+                <div v-if="app.logo" class="logo" :class="{ no_padding: app.no_padding }">
                   <v-card-media 
                    :src="'apps/'+app.logo"
                    max-height="100"
@@ -68,13 +68,12 @@ export default {
                     { name: "Server", link: 'https://github.com/Christopher96/lumi-server'}
                 ],
                 logo: 'lumi.png',
-                no_bg: "true"
+                no_padding: true
             },
             {
                 id: "bachelor",
                 title: "A cost comparison between Amazon Web Services EC2 instances",
                 description: "This paper involved a study of comparing the cost-effectiveness of different EC2 instances that AWS provides and evaluate which is best fit for training a deep convolutional neural network used an image recognition application. The thesis project was made inhouse at a company called Elvenite while supervised and examined at KTH.",
-                repo: "https://github.com/Christopher96/simon-says-chipkit",
                 logo: 'aws.png',
                 custom: [
                     { name: "paper", link: 'http://www.diva-portal.org/smash/get/diva2:1602614/FULLTEXT01.pdf'},
@@ -112,12 +111,14 @@ export default {
                 title: "Prototype pollution demo",
                 description: "This repository was used to illustrate the dangers of prototype pollution, which is a malicious method which can be used to trigger and execute code which gives the malicious actor a remote shell. We demonstrated how this is can be done in a normal node js chat application and a blog, as well as how to prevent against it.",
                 custom: [
-                    {name: "lang-sec-chat", link: "https://github.com/Christopher96/lang-sec-chat",},
-                    {name: "lang-sec-blog", link: "https://github.com/Christopher96/lang-sec-blog",},
-                    {name: "paper", link: "http://www.diva-portal.org/smash/get/diva2:1265901/FULLTEXT01.pdf",}
+                    {name: "chat", link: "https://github.com/Christopher96/lang-sec-chat",},
+                    {name: "blog", link: "https://github.com/Christopher96/lang-sec-blog",},
+                    {name: "paper", link: "https://github.com/Christopher96/lang-sec-chat/blob/master/Langsec_Project.pdf",}
                 ],
                 logo: "pollution.png",
             },
+          
+
             {
                 id: "text-to-sql",
                 title: "Text to SQL",
@@ -127,15 +128,30 @@ export default {
                     {name: "paper", link: "https://github.com/Christopher96/text-to-sql/blob/master/AI_Project.pdf",}
                 ],
                 logo: "nlp.png"
+            },  
+            {
+                id: "cruise-control",
+                title: "FPGA Cruise Control System",
+                description: "The Altera DE2 Development kit provides state-of-the-art technology and features including the possibility to program a Field-programmable Gate Array (FPGA) and support for a Hardware Abstraction Layer (HAL) API. We downloaded a Nios 2 Intel Processor to the FPGA and then developed a cruise control system running on the real-time operating system OS-II flashed on the RAM. (Code sent upon request)",
+                custom: [
+                    {name: "board", link: "https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&No=30"}
+                ],
+                logo: "fpga.png"
+            },
+            {
+                id: "mips-processor",
+                title: "MIPS Processor",
+                description: "I have learned the MIPS assembly language and built the complete circuitry of my own simulated processor in logisim. As well as compiling and running my own machine code on it. (Design sent upon request)",
+                logo: "mips.png",
             },
             {
                 title: 'C compiler',
-                description: 'As part of my compiler course I wrote compiler for a subset of the C-language, taking C code as input and producing X86 assembly as output. This was done using the general-purpose functional language Ocaml. (Code not public)',
+                description: 'As part of my compiler course I wrote compiler for a subset of the C-language, taking C code as input and producing X86 assembly as output. This was done using the general-purpose functional language Ocaml. (Code sent upon request)',
                 logo: "ocaml.png"
             },
             {
                 title: 'Machine Learning',
-                description: 'I have learned the complex mathematics behind machine learning algorithms, implemented them and trained my own models to produce intelligent output. Namely Descision trees, Support Vector Machines and Bayesian Classifiers. (Code not public)',
+                description: 'I have learned the complex mathematics behind machine learning algorithms, implemented them and trained my own models to produce intelligent output. Namely Descision trees, Support Vector Machines and Bayesian Classifiers. (Code sent upon request)',
                 logo: "ml.png"
             },
             {
@@ -155,15 +171,14 @@ export default {
             {
                 title: 'Cryptohunter',
                 description: 'This is an application built upon the Angular framework. It is a fictional cryptocurrency trading site where you can play around with real currencies updated in real time an API provided by coinmarketcap.',
-                link: 'http://cryptohunter.herokuapp.com/',
                 repo: 'https://github.com/Christopher96/cryptohunter',
-                logo: 'cmc.png'
+                logo: 'bitcoin.png'
             },
             {
                 title: 'Bitfire',
                 description: 'Bitfire is a fictional LAN event, this is a simple yet functional and pretty site built on HTML5',
                 link: 'http://studenter.miun.se/~chga1600/dt057g/moment_5/',
-                logo: 'bitfire.png'
+                logo: 'bitfire.png',
             },
                     
         ]

@@ -46,10 +46,9 @@ export default {
                 logo: 'rpg.png'
             },
             {
-                id: 'dixitonline',
                 title: 'Dixit online',
                 description: 'An online version of the game Dixit made with the React framework as frontend. A lightweight back end server is run behind the scenes to store saved games and for making calls to the Unsplash API. The backend serves as a RESTful API where simple endpoints are used for fetching and storing data built on Express and MongoDB. The game is deployed with Heroku.',
-                repo: 'https://github.com/Christopher96/dixit-online',
+                link: 'https://github.com/Christopher96/dixit-online',
                 logo: 'dixit.png'
             },
             {

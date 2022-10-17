@@ -91,8 +91,7 @@
 </template>
 
 <style>
-.no_bg {
-    background-color: transparent !important;
+.no_padding {
     padding: 0 !important;
 }
 .logo {
@@ -133,7 +132,7 @@
 </style>
 
 <script>
-import Applications from '@/components/Applications'
+import Projects from '@/components/Projects'
 import Games from '@/components/Games'
 import Experience from '@/components/Experience'
 import Skills from '@/components/Skills'
@@ -155,7 +154,8 @@ export default {
     },
     methods: {
         stickyCheck(e, el) {
-            if(e.pageY > el.offsetTop + 50) {
+            let curPos = e.path[1].scrollY;
+            if(curPos > el.offsetTop + 50) {
                 this.sticky = true
             } else {
                 this.sticky = false
@@ -170,7 +170,7 @@ export default {
         }
     },
     components: {
-        Applications,
+        Projects,
         Games,
         Skills,
         Experience
@@ -184,7 +184,7 @@ export default {
         page: null,
         items: [
             { title: "Experience", message: "Computer science and engineering are my passions and I have had the fortune to study and work within the fields.", icon: "fa-certificate", component: Experience },
-            { title: "Applications",  message: "I always have some project going on, constantly eager to expand my knowledge.", icon: "fa-globe", component: Applications },
+            { title: "Projects",  message: "I always have some project going on, constantly eager to expand my knowledge.", icon: "fa-code", component: Projects },
             { title: "Games", message: "When you are making a game you get to express all of your creativity and ideas.", icon: "fa-gamepad", component: Games },
             { title: "Skills", message: "I have been programming since the age of 15, I am self taught in most things.", icon: "fa-user", component: Skills },
         ],
